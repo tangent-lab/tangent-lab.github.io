@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Tangent Lab",
-  tagline: "Dinosaurs are cool",
+  tagline: "Touching Tomorrow: Interfaces Redefining the Future",
   favicon: "img/favicon.png",
 
   // Set the production url of your site here
@@ -136,6 +136,22 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins: [
+    async function tailwindPlugin(context, options) {
+      return {
+        name: "tailwind-plugin",
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins = [
+            require("postcss-import"),
+            require("tailwindcss"),
+            require("autoprefixer"),
+          ];
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 };
 
 export default config;
