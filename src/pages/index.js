@@ -16,11 +16,11 @@ function HomepageHeader() {
 
         <div className="w-full h-full absolute top-0 left-0 bg-[url('/assets/images/grid.svg')] bg-[length:2000px_1000px] bg-repeat bg-center opacity-10"></div>
         <div className="container mx-auto text-center py-24">
-          <div className=" flex  w-full justify-center">
-            <div>
+          <div className=" flex  w-full justify-center relative ">
+            <div className="z-20">
               <img src="/img/favicon.png" className=" size-20 sm:size-28" />
             </div>
-            <h1 className="text-3xl sm:text-5xl font-bold text-white  self-center mt-2">
+            <h1 className="z-20 text-3xl sm:text-5xl font-bold text-white  self-center mt-2">
               {siteConfig.title}
             </h1>
           </div>
