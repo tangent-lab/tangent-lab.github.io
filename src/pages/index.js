@@ -14,13 +14,13 @@ function HomepageHeader() {
       <header className="bg-gradient-to-b from-teal-950 to-teal-100 text-white relative">
         <div className="w-full h-full absolute top-0 left-0 bg-[url('/assets/images/noise.jpg')] bg-cover bg-center opacity-10"></div>
 
-        <div className="w-full h-full absolute top-0 left-0 bg-[url('/assets/images/grid.svg')] bg-cover bg-center opacity-10"></div>
+        <div className="w-full h-full absolute top-0 left-0 bg-[url('/assets/images/grid.svg')] bg-[length:2000px_1000px] bg-repeat bg-center opacity-10"></div>
         <div className="container mx-auto text-center py-24">
-          <div className=" flex items-center w-full justify-center">
+          <div className=" flex  w-full justify-center">
             <div>
-              <img src="/img/favicon.png" />
+              <img src="/img/favicon.png" className=" size-20 sm:size-28" />
             </div>
-            <h1 className="text-5xl font-bold text-white">
+            <h1 className="text-3xl sm:text-5xl font-bold text-white  self-center mt-2">
               {siteConfig.title}
             </h1>
           </div>
