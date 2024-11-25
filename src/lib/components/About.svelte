@@ -1,5 +1,7 @@
 <div class="my-4">
-  <div class="grid grid-cols-3 gap-4">
+  <div class="font-semibold mb-1.5 hidden">About</div>
+
+  <div class="grid md:grid-cols-3 gap-4">
     <div class=" p-6 rounded-lg bg-gray-50 flex flex-col gap-4 md:col-span-2">
       <div>
         <div class="text-xl font-semibold">

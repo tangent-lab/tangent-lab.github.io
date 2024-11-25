@@ -3,6 +3,8 @@
 </script>
 
 <div class="my-4">
+  <div class="font-semibold mb-1.5 hidden">Publications</div>
+
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     {#each publications as publication}
       <div

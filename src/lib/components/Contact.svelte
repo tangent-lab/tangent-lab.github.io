@@ -1,5 +1,7 @@
 <div class="my-4">
-  <div class="flex flex-col md:flex-row gap-4">
+  <div class="font-semibold mb-1.5 hidden">Contact</div>
+
+  <div class="grid md:grid-cols-2 gap-4">
     <div class="flex flex-col md:basis-1/2 gap-4">
       <div class="flex flex-col p-4 bg-gray-50 rounded-lg">
         <div class="font-semibold mb-1">Contact</div>

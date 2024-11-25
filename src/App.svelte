@@ -90,6 +90,7 @@
           image: "/assets/images/lawrence.png",
           name: "Prof. Lawrence Kim",
           title: "Assistant Professor of Computer Science",
+          url: "https://www.lhkim.com/",
         },
         {
           image: "/assets/images/lawrence.png",
