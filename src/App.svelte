@@ -7,21 +7,25 @@
 </script>
 
 <div class="h-screen max-h-[100dvh] w-screen flex justify-center">
-  <div class="w-full max-w-6xl p-3">
-    <div class="flex items-center gap-2 mt-3 mb-4">
-      <div class="text-2xl font-semibold text-gray-700">Tangent Lab</div>
-
-      <div>
-        <img src="/favicon.png" alt="Tangent Lab" class="size-8" />
-      </div>
-    </div>
-
-    <div class="">
+  <div class="w-full max-w-6xl py-6 p-3">
+    <div class="relative">
       <img
         src="/assets/images/sfu.webp"
         alt="Tangent Lab"
         class="rounded-lg h-96 w-full bg-inherit object-cover"
       />
+
+      <div
+        class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-tl from-10% to-40% from-gray-50 to-transparent text-white text-xs font-medium bottom-0 p-1"
+      ></div>
+
+      <div class=" absolute bottom-0 right-5 flex items-center gap-2 mt-3 mb-4">
+        <div class="text-2xl font-semibold text-gray-700">Tangent Lab</div>
+
+        <div>
+          <img src="/favicon.png" alt="Tangent Lab" class="size-8" />
+        </div>
+      </div>
     </div>
 
     <About />
