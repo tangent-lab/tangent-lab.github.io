@@ -9,6 +9,13 @@
         and Science Complex 1 (TASC1) on the Burnaby campus.
       </div>
 
+      <div class="mb-2 text-sm">
+        <div class="font-semibold">Tangent Lab</div>
+
+        <div class=" text-gray-600">
+          Technology and Science Complex 1, Burnaby, BC V5A 1S6
+        </div>
+      </div>
       <div>
         <img
           src="/assets/images/tasc1.png"
