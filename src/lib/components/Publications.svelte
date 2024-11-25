@@ -2,9 +2,7 @@
   let { publications } = $props();
 </script>
 
-<div class="my-6">
-  <div class="font-semibold mb-1.5">Publications</div>
-
+<div class="my-4">
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
     {#each publications as publication}
       <div

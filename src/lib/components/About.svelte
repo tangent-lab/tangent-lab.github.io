@@ -1,8 +1,6 @@
-<div class="my-6">
-  <div class="font-semibold mb-1.5">About</div>
-
-  <div class="flex flex-col md:flex-row gap-4">
-    <div class="md:basis-2/3 p-6 rounded-lg bg-gray-50 flex flex-col gap-4">
+<div class="my-4">
+  <div class="grid grid-cols-3 gap-4">
+    <div class=" p-6 rounded-lg bg-gray-50 flex flex-col gap-4 md:col-span-2">
       <div>
         <div class="text-xl font-semibold">
           <div class="font-secondary font-medium">
@@ -50,11 +48,11 @@
       </div>
     </div>
 
-    <div class="hidden md:flex md:basis-1/3">
+    <div class="hidden md:flex">
       <img
         src="/assets/images/lawrence.png"
         alt="Lawrence Kim"
-        class="rounded-lg max-h-[32rem] w-full h-full object-cover"
+        class="rounded-lg max-h-[28rem] w-full h-full object-cover"
       />
     </div>
   </div>
