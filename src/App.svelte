@@ -104,17 +104,23 @@
         {
           image: "/assets/images/lawrence.png",
           name: "Prof. Lawrence Kim",
-          title: "Assistant Professor of Computer Science",
+          title: "PhD Student",
         },
         {
           image: "/assets/images/lawrence.png",
           name: "Prof. Lawrence Kim",
-          title: "Assistant Professor of Computer Science",
+          title: "MSc Student",
         },
         {
           image: "/assets/images/lawrence.png",
           name: "Prof. Lawrence Kim",
-          title: "Assistant Professor of Computer Science",
+          title: "Alumni (PhD)",
+          links: [
+            {
+              title: "Email",
+              url: "mailto:lawkim@sfu.ca",
+            },
+          ],
         },
       ]}
     />
