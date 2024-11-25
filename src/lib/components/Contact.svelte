@@ -1,7 +1,7 @@
-<div class="my-4">
+<div class="my-6">
   <div class="font-semibold mb-1">Contact</div>
 
-  <div class="flex gap-2.5">
+  <div class="flex gap-4">
     <div class="basis-1/2">
       <div class="text-sm text-gray-600 mb-2">
         Tangent Lab is part of the SFU IxLab group and focuses on research in

@@ -1,5 +1,7 @@
 <script lang="ts">
   import Contact from "$lib/components/Contact.svelte";
+  import About from "$lib/components/About.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <div class="h-screen max-h-[100dvh] w-screen flex justify-center">
@@ -20,6 +22,10 @@
       />
     </div>
 
+    <About />
+
     <Contact />
+
+    <Footer />
   </div>
 </div>

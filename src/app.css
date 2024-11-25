@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("/assets/fonts/Merriweather.ttf");
+  font-display: swap;
+}
+
+.font-secondary {
+  font-family: "Merriweather", sans-serif;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", ui-sans-serif,
+    system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif,
+    "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
