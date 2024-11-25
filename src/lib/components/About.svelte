@@ -42,8 +42,8 @@
 
           <div>
             Recognized with awards from CHI, UIST, and HRI, as well as Fast
-            Company’s Innovation by Design, the Tangent Lab is redefining the
-            role of technology in creating more human-focused and empathetic
+            Company’s Innovation by Design, Tangent Lab is redefining the role
+            of technology in creating more human-focused and empathetic
             interactions.
           </div>
         </div>
