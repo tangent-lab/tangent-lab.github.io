@@ -2,7 +2,7 @@
   let { people } = $props();
 </script>
 
-<div class="my-6">
+<div class="my-4">
   <div class="font-semibold mb-1.5">People</div>
 
   <div

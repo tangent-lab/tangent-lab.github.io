@@ -1,21 +1,24 @@
-<div class="my-6">
-  <div class="font-semibold mb-1.5">Contact</div>
-
+<div class="my-4">
   <div class="flex flex-col md:flex-row gap-4">
-    <div class="md:basis-1/2">
-      <div class="text-sm text-gray-600 mb-2">
-        Tangent Lab is part of the SFU IxLab group and focuses on research in
-        Human-Computer Interaction (HCI). Our lab is located in the Technology
-        and Science Complex 1 (TASC1) on the Burnaby campus.
-      </div>
+    <div class="flex flex-col md:basis-1/2 gap-4">
+      <div class="flex flex-col p-4 bg-gray-50 rounded-lg">
+        <div class="font-semibold mb-1">Contact</div>
 
-      <div class="mb-2 text-sm">
-        <div class="font-semibold">Tangent Lab</div>
+        <div class="text-sm text-gray-600 mb-2">
+          Tangent Lab is part of the SFU IxLab group and focuses on research in
+          Human-Computer Interaction (HCI). Our lab is located in the Technology
+          and Science Complex 1 (TASC1) on the Burnaby campus.
+        </div>
 
-        <div class=" text-gray-600">
-          Technology and Science Complex 1, Burnaby, BC V5A 1S6
+        <div class="mb-2 text-sm">
+          <div class="font-semibold">Tangent Lab</div>
+
+          <div class=" text-gray-600">
+            Technology and Science Complex 1, Burnaby, BC V5A 1S6
+          </div>
         </div>
       </div>
+
       <div>
         <img
           src="/assets/images/tasc1.png"
