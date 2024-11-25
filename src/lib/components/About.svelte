@@ -54,7 +54,7 @@
       <img
         src="/assets/images/lawrence.png"
         alt="Lawrence Kim"
-        class="rounded-lg max-h-[28rem] w-full h-full object-cover"
+        class="rounded-lg max-h-[26rem] w-full h-full object-cover"
       />
     </div>
   </div>

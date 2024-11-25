@@ -90,12 +90,16 @@
           image: "/assets/images/lawrence.png",
           name: "Prof. Lawrence Kim",
           title: "Assistant Professor of Computer Science",
-          url: "https://www.lhkim.com/",
-        },
-        {
-          image: "/assets/images/lawrence.png",
-          name: "Prof. Lawrence Kim",
-          title: "Assistant Professor of Computer Science",
+          links: [
+            {
+              title: "Website",
+              url: "https://www.lhkim.com/",
+            },
+            {
+              title: "Twitter",
+              url: "https://twitter.com/lawhkim",
+            },
+          ],
         },
         {
           image: "/assets/images/lawrence.png",

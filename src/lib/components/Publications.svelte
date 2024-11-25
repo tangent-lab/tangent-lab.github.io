@@ -24,12 +24,29 @@
           <div class="text-sm text-gray-100 font-medium">
             {publication.venue}
           </div>
-          <div class=" mt-1 mb-1.5 hover:underline font-medium cursor-pointer">
+          <div
+            class=" mt-1 mb-1.5 group-hover:underline font-medium cursor-pointer"
+          >
             <a href={publication.url} target="_blank" rel="noopener noreferrer">
               {publication.title}
             </a>
           </div>
-          <div class="text-sm text-gray-400">{publication.authors}</div>
+          <div class="text-sm text-gray-400 line-clamp-2">
+            {publication.authors}
+          </div>
+
+          <div class="flex gap-1.5 mt-1">
+            {#each publication.links as link}
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-sm text-gray-100 hover:underline"
+              >
+                {link.title}
+              </a>
+            {/each}
+          </div>
         </div>
       </div>
     {/each}
