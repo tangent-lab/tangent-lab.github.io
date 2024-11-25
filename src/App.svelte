@@ -26,7 +26,63 @@
 
     <About />
 
-    <!-- <Publications /> -->
+    <Publications
+      publications={[
+        {
+          image: "/assets/images/publications/codesign.gif",
+          title:
+            "Co-Designing Programmable Fidgeting Experience with Swarm Robots for Adults with ADHD",
+          authors: "Samira Pulatova, Lawrence Kim",
+          url: "https://www.lhkim.com/Projects/2024-SwarmFidgetADHD/ASSETS%20preprint.pdf",
+
+          venue: "ASSETS 2024",
+          links: [
+            {
+              title: "Presentation",
+              url: "https://www.youtube.com/watch?v=vglfyKbNiHE&ab_channel=SFUTangentLab",
+            },
+          ],
+        },
+        {
+          image: "/assets/images/publications/multi-robot.gif",
+          title:
+            "Impact of Multi-Robot Presence and Anthropomorphism on Human Cognition and Emotion",
+          url: "https://www.lhkim.com/Projects/2024-MultiRobotPresence/MultiRobotPresence-Preprint.pdf",
+
+          authors: "Jiadi Luo, Veronika Domova, Lawrence Kim",
+          venue: "CHI 2024",
+          links: [
+            {
+              title: "Video",
+              url: "https://youtu.be/_plPdD05mSQ?si=TByzesYJDYGhXsJl",
+            },
+            {
+              title: "Presentation",
+              url: "https://www.youtube.com/watch?v=yAA-sZ6ViqI&ab_channel=ACMSIGCHI",
+            },
+          ],
+        },
+
+        {
+          image: "/assets/images/publications/swarmfidget.gif",
+          title:
+            "SwarmFidget: Exploring Programmable Actuated Fidgeting with Swarm Robots",
+          url: "https://www.lhkim.com/Projects/2023-SwarmFidget/SwarmFidget.pdf",
+          authors: "Lawrence Kim, Veronika Domova, Yuqi Yao, Parsa Rajabi",
+          venue: "UIST 2023",
+          links: [
+            {
+              title: "Video",
+              url: "https://www.youtube.com/watch?v=gy4rGCqOujs&ab_channel=SFUTangentLab",
+            },
+            {
+              title: "Presentation",
+              url: "https://www.youtube.com/live/IiKX6HRSiSk?si=Rc6QybQlDvnZSwjq&t=13682",
+            },
+          ],
+        },
+      ]}
+    />
 
     <People
       people={[

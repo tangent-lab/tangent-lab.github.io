@@ -1,61 +1,37 @@
+<script lang="ts">
+  let { publications } = $props();
+</script>
+
 <div class="my-6">
   <div class="font-semibold mb-1.5">Publications</div>
 
-  <div class="flex flex-col md:flex-row gap-4">
-    <div class="md:basis-2/3 p-6 rounded-lg bg-gray-50 flex flex-col gap-4">
-      <div>
-        <div class="text-xl font-semibold">
-          <div class="font-secondary font-medium">
-            We design the interfaces of tomorrow by combining human-computer
-            interaction, robotics, haptics, and AI.
-          </div>
-        </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    {#each publications as publication}
+      <div
+        class="relative flex flex-col justify-center rounded-lg group cursor-pointer"
+      >
+        <img
+          src={publication?.image ?? "/assets/images/user.png"}
+          alt={publication.title}
+          class="rounded-lg w-full aspect-square object-cover"
+        />
 
-        <div class="mt-2 text-sm flex-1 flex flex-col">
-          <div class="font-medium text-gray-800">
-            Tangent Lab, led by Prof. Lawrence Kim.
-          </div>
-        </div>
-      </div>
+        <div
+          class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-t from-gray-800 to-transparent text-white text-xs font-medium bottom-0 p-1"
+        ></div>
 
-      <div class="flex justify-end">
-        <div class="mt-auto text-sm text-gray-700 flex flex-col gap-3">
-          <div>
-            We focus on creating affective, tangible interfaces that enable
-            meaningful interaction with technology while promoting physical and
-            mental well-being. By leveraging human abilities like spatial
-            cognition, emotional connection, we develop cutting-edge systems
-            that bridge the digital and physical worlds.
+        <div class=" absolute z-20 bottom-0 text-white p-5">
+          <div class="text-sm text-gray-100 font-medium">
+            {publication.venue}
           </div>
-
-          <div>
-            Our research spans interactive tangible displays, haptic interfaces,
-            and AI-powered tools to enhance remote collaboration, creative
-            design, education, therapy, and accessibility.
+          <div class=" mt-1 mb-1.5 hover:underline font-medium cursor-pointer">
+            <a href={publication.url} target="_blank" rel="noopener noreferrer">
+              {publication.title}
+            </a>
           </div>
-
-          <div>
-            Guided by iterative prototyping, human-centered design, and studies
-            on human perception, we aim to shape the future of how people
-            interact with technology.
-          </div>
-
-          <div>
-            Recognized with awards from CHI, UIST, and HRI, as well as Fast
-            Company’s Innovation by Design, the Tangent Lab is redefining the
-            role of technology in creating more human-focused and empathetic
-            interactions.
-          </div>
+          <div class="text-sm text-gray-400">{publication.authors}</div>
         </div>
       </div>
-    </div>
-
-    <div class="hidden md:flex md:basis-1/3">
-      <img
-        src="/assets/images/lawrence.png"
-        alt="Lawrence Kim"
-        class="rounded-lg max-h-[32rem] w-full h-full object-cover"
-      />
-    </div>
+    {/each}
   </div>
 </div>
