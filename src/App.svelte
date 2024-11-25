@@ -16,7 +16,7 @@
       />
 
       <div
-        class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-tl from-10% to-40% from-gray-50 to-transparent text-white text-xs font-medium bottom-0 p-1"
+        class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-tl from-10% to-45% from-gray-50/95 to-transparent text-white text-xs font-medium bottom-0 p-1"
       ></div>
 
       <div class=" absolute bottom-0 right-5 flex items-center gap-2 mt-3 mb-4">
