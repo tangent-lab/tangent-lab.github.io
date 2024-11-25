@@ -1,18 +1,8 @@
 <div class="my-6">
-  <div class="font-semibold mb-1">About</div>
+  <div class="font-semibold mb-1.5">About</div>
 
-  <div class="flex gap-4">
-    <div class="basis-1/3">
-      <img
-        src="/assets/images/lawrence.png"
-        alt="Tangent Lab"
-        class="rounded-lg h-96 w-full bg-inherit object-cover"
-      />
-    </div>
-
-    <div
-      class="basis-2/3 p-6 rounded-lg bg-gray-50 flex flex-col justify-between"
-    >
+  <div class="flex flex-col md:flex-row gap-4">
+    <div class="md:basis-2/3 p-6 rounded-lg bg-gray-50 flex flex-col gap-4">
       <div>
         <div class="text-xl font-semibold">
           <div class="font-secondary font-medium">
@@ -28,7 +18,7 @@
         </div>
       </div>
 
-      <div class="h-full flex justify-end">
+      <div class="flex justify-end">
         <div class="mt-auto text-sm text-gray-700 flex flex-col gap-3">
           <div>
             We focus on creating affective, tangible interfaces that enable
@@ -58,6 +48,14 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="hidden md:flex md:basis-1/3">
+      <img
+        src="/assets/images/lawrence.png"
+        alt="Lawrence Kim"
+        class="rounded-lg max-h-[32rem] w-full h-full object-cover"
+      />
     </div>
   </div>
 </div>
