@@ -91,7 +91,7 @@
     <People
       people={[
         {
-          image: "/assets/images/lawrence.png",
+          image: "/assets/images/people/lawrence.png",
           name: "Prof. Lawrence Kim",
           title: "Assistant Professor of Computer Science",
           links: [
@@ -103,22 +103,67 @@
               title: "Twitter",
               url: "https://twitter.com/lawhkim",
             },
+            {
+              title: "Email",
+              url: "mailto:lawkim@sfu.ca",
+            },
           ],
         },
         {
-          image: "/assets/images/lawrence.png",
-          name: "Prof. Lawrence Kim",
+          image: "/assets/images/people/xueying.jpeg",
+          name: "Xueying Zhang",
           title: "PhD Student",
         },
         {
-          image: "/assets/images/lawrence.png",
-          name: "Prof. Lawrence Kim",
-          title: "MSc Student",
+          image: "/assets/images/people/duc.jpeg",
+          name: "Duc Dang",
+          title: "Thesis MSc Student",
         },
         {
-          image: "/assets/images/lawrence.png",
-          name: "Prof. Lawrence Kim",
-          title: "Alumni (PhD)",
+          image: "/assets/images/people/sarah.jpeg",
+          name: "Sarah Pratt",
+          title: "Thesis MSc Student",
+        },
+        {
+          image: "/assets/images/people/qihan.jpeg",
+          name: "Qihan Gao",
+          title: "Thesis MSc Student",
+        },
+        {
+          image: "/assets/images/people/tim.jpg",
+          name: "Tim Baek",
+          title: "Thesis MSc Student",
+        },
+        {
+          image: "/assets/images/people/gary.jpeg",
+          name: "Gary(Huayu) Wang",
+          title: "Professional MSc Student",
+        },
+        {
+          image: "/assets/images/people/ayana.jpeg",
+          name: "Ayana Hussain",
+          title: "Undergraduate Student",
+        },
+
+        {
+          image: "/assets/images/people/janghyeon.jpeg",
+          name: "Janghyeon Lee",
+          title: "Alumni - Professional MSc Student",
+        },
+        {
+          image: "/assets/images/people/jiadi.jpeg",
+          name: "Jiadi(Tian) Luo",
+          title: "Alumni - Undergraduate Student",
+        },
+        {
+          image: "/assets/images/people/samira.jpeg",
+          name: "Samira Pulatova",
+          title: "Alumni - Undergraduate Student",
+        },
+        {
+          image: "/assets/images/100.png",
+          name: "Seeking exceptional students",
+          title: "Email CV & transcript to Prof. Kim!",
           links: [
             {
               title: "Email",
