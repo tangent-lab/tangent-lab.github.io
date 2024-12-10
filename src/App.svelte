@@ -91,7 +91,7 @@
     <People
       people={[
         {
-          image: "/assets/images/people/lawrence.png",
+          image: "/assets/images/people/Lawrence.png",
           name: "Prof. Lawrence Kim",
           title: "Assistant Professor of Computer Science",
           links: [
@@ -110,37 +110,37 @@
           ],
         },
         {
-          image: "/assets/images/people/xueying.jpeg",
+          image: "/assets/images/people/Xueying.png",
           name: "Xueying Zhang",
           title: "PhD Student",
         },
         {
-          image: "/assets/images/people/duc.jpeg",
+          image: "/assets/images/people/Duc.png",
           name: "Duc Dang",
           title: "Thesis MSc Student",
         },
         {
-          image: "/assets/images/people/sarah.jpeg",
+          image: "/assets/images/people/Sarah.png",
           name: "Sarah Pratt",
           title: "Thesis MSc Student",
         },
         {
-          image: "/assets/images/people/qihan.jpeg",
+          image: "/assets/images/people/Qihan.png",
           name: "Qihan Gao",
           title: "Thesis MSc Student",
         },
         {
-          image: "/assets/images/people/tim.jpg",
+          image: "/assets/images/people/Tim.png",
           name: "Tim Baek",
           title: "Thesis MSc Student",
         },
         {
-          image: "/assets/images/people/gary.jpeg",
+          image: "/assets/images/people/Gary.png",
           name: "Gary(Huayu) Wang",
           title: "Professional MSc Student",
         },
         {
-          image: "/assets/images/people/ayana.jpeg",
+          image: "/assets/images/people/Ayana.png",
           name: "Ayana Hussain",
           title: "Undergraduate Student",
         },
