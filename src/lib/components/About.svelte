@@ -52,8 +52,8 @@
 
     <div class="hidden md:flex">
       <img
-        src="/assets/images/lawrence.png"
-        alt="Lawrence Kim"
+        src="/assets/images/people/GroupPhoto.png"
+        alt="Group Photo"
         class="rounded-lg max-h-[26rem] w-full h-full object-cover"
       />
     </div>
