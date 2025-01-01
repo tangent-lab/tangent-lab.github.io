@@ -4,178 +4,181 @@
   import Footer from "$lib/components/Footer.svelte";
   import People from "./lib/components/People.svelte";
   import Publications from "./lib/components/Publications.svelte";
+  import News from "./lib/components/News.svelte";
+  import { people } from './data/people.js';
+  import { publications } from './data/publications.js';
+  import { news } from './data/news.js';
+  import Button from "./lib/components/Button.svelte";
+
+  let currentPage = "home"; 
+
+  currentPage = location.hash.replace("#", "") || "home";
+
+  window.addEventListener("hashchange", () => {
+    currentPage = location.hash.replace("#", "") || "home";
+  });
+
+  const navigate = (page) => {
+    currentPage = page;
+    history.pushState(null, "", `#${page}`);
+    window.scrollTo(0, 0);
+  };
 </script>
 
-<div class="h-screen max-h-[100dvh] w-screen flex justify-center">
-  <div class="w-full max-w-6xl py-6 p-3">
-    <div class="relative">
-      <img
-        src="/assets/images/sfu.webp"
-        alt="Tangent Lab"
-        class="rounded-lg h-96 w-full bg-inherit object-cover"
-      />
 
-      <div
-        class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-tl from-10% to-45% from-gray-50/95 to-transparent text-white text-xs font-medium bottom-0 p-1"
-      ></div>
+<nav class="bg-transparent fixed top-0 left-0 w-full z-50">
+  <div class="bg-white bg-opacity-90 flex justify-between items-center max-w-6xl mx-auto px-6 py-4 rounded-lg shadow-md">
 
-      <div class=" absolute bottom-0 right-5 flex items-center gap-2 mt-3 mb-4">
-        <div class="text-2xl font-semibold text-gray-700">Tangent Lab</div>
-
-        <div>
-          <img src="/favicon.png" alt="Tangent Lab" class="size-8" />
-        </div>
-      </div>
+    <div class="flex items-center">
+      <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+      <span class="text-xl font-bold text-gray-800">Tangent Lab</span>
     </div>
 
-    <About />
-
-    <Publications
-      publications={[
-        {
-          image: "/assets/images/publications/codesign.gif",
-          title:
-            "Co-Designing Programmable Fidgeting Experience with Swarm Robots for Adults with ADHD",
-          authors: "Samira Pulatova, Lawrence Kim",
-          url: "https://www.lhkim.com/Projects/2024-SwarmFidgetADHD/ASSETS%20preprint.pdf",
-
-          venue: "ASSETS 2024",
-          links: [
-            {
-              title: "Presentation",
-              url: "https://www.youtube.com/watch?v=vglfyKbNiHE&ab_channel=SFUTangentLab",
-            },
-          ],
-        },
-        {
-          image: "/assets/images/publications/multi-robot.gif",
-          title:
-            "Impact of Multi-Robot Presence and Anthropomorphism on Human Cognition and Emotion",
-          url: "https://www.lhkim.com/Projects/2024-MultiRobotPresence/MultiRobotPresence-Preprint.pdf",
-
-          authors: "Jiadi Luo, Veronika Domova, Lawrence Kim",
-          venue: "CHI 2024",
-          links: [
-            {
-              title: "Video",
-              url: "https://youtu.be/_plPdD05mSQ?si=TByzesYJDYGhXsJl",
-            },
-            {
-              title: "Presentation",
-              url: "https://www.youtube.com/watch?v=yAA-sZ6ViqI&ab_channel=ACMSIGCHI",
-            },
-          ],
-        },
-
-        {
-          image: "/assets/images/publications/swarmfidget.gif",
-          title:
-            "SwarmFidget: Exploring Programmable Actuated Fidgeting with Swarm Robots",
-          url: "https://www.lhkim.com/Projects/2023-SwarmFidget/SwarmFidget.pdf",
-          authors: "Lawrence Kim, Veronika Domova, Yuqi Yao, Parsa Rajabi",
-          venue: "UIST 2023",
-          links: [
-            {
-              title: "Video",
-              url: "https://www.youtube.com/watch?v=gy4rGCqOujs&ab_channel=SFUTangentLab",
-            },
-            {
-              title: "Presentation",
-              url: "https://www.youtube.com/live/IiKX6HRSiSk?si=Rc6QybQlDvnZSwjq&t=13682",
-            },
-          ],
-        },
-      ]}
-    />
-
-    <People
-      people={[
-        {
-          image: "/assets/images/people/Lawrence.png",
-          name: "Prof. Lawrence Kim",
-          title: "Assistant Professor of Computer Science",
-          links: [
-            {
-              title: "Website",
-              url: "https://www.lhkim.com/",
-            },
-            {
-              title: "Twitter",
-              url: "https://twitter.com/lawhkim",
-            },
-            {
-              title: "Email",
-              url: "mailto:lawkim@sfu.ca",
-            },
-          ],
-        },
-        {
-          image: "/assets/images/people/Xueying.png",
-          name: "Xueying Zhang",
-          title: "PhD Student",
-        },
-        {
-          image: "/assets/images/people/Duc.png",
-          name: "Duc Dang",
-          title: "Thesis MSc Student",
-        },
-        {
-          image: "/assets/images/people/Sarah.png",
-          name: "Sarah Pratt",
-          title: "Thesis MSc Student",
-        },
-        {
-          image: "/assets/images/people/Qihan.png",
-          name: "Qihan Gao",
-          title: "Thesis MSc Student",
-        },
-        {
-          image: "/assets/images/people/Tim.png",
-          name: "Tim Baek",
-          title: "Thesis MSc Student",
-        },
-        {
-          image: "/assets/images/people/Gary.png",
-          name: "Gary(Huayu) Wang",
-          title: "Professional MSc Student",
-        },
-        {
-          image: "/assets/images/people/Ayana.png",
-          name: "Ayana Hussain",
-          title: "Undergraduate Student",
-        },
-
-        {
-          image: "/assets/images/people/janghyeon.jpeg",
-          name: "Janghyeon Lee",
-          title: "Alumni - Professional MSc Student",
-        },
-        {
-          image: "/assets/images/people/jiadi.jpeg",
-          name: "Jiadi(Tian) Luo",
-          title: "Alumni - Undergraduate Student",
-        },
-        {
-          image: "/assets/images/people/samira.jpeg",
-          name: "Samira Pulatova",
-          title: "Alumni - Undergraduate Student",
-        },
-        {
-          image: "/assets/images/100.png",
-          name: "Seeking exceptional students",
-          title: "Email CV & transcript to Prof. Kim!",
-          links: [
-            {
-              title: "Email",
-              url: "mailto:lawkim@sfu.ca",
-            },
-          ],
-        },
-      ]}
-    />
-
-    <Contact />
-
-    <Footer />
+    <div class="flex space-x-4">
+      <a
+        href="#home"
+        on:click={(e) => { e.preventDefault(); navigate("home"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
+          ${currentPage === "home" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        Home
+      </a>
+      <a
+        href="#people"
+        on:click={(e) => { e.preventDefault(); navigate("people"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
+          ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        People
+      </a>
+      <a
+        href="#news"
+        on:click={(e) => { e.preventDefault(); navigate("news"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
+          ${currentPage === "news" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        News
+      </a>
+      <a
+        href="#publications"
+        on:click={(e) => { e.preventDefault(); navigate("publications"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
+          ${currentPage === "publications" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        Publications
+      </a>
   </div>
-</div>
+</nav>
+
+
+<main class="min-h-screen w-screen bg-white flex justify-center">
+  <div class="w-full max-w-6xl py-6 p-3 mt-16">
+
+    {#if currentPage === "home"}
+      <div class="relative">
+        <img
+          src="/assets/images/sfu.webp"
+          alt="Tangent Lab"
+          class="rounded-lg h-96 w-full bg-inherit object-cover"
+        />
+
+        <div
+          class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-tl from-10% to-45% from-gray-50/95 to-transparent text-white text-xs font-medium bottom-0 p-1"
+        ></div>
+
+        <div class=" absolute bottom-0 right-5 flex items-center gap-2 mt-3 mb-4">
+          <div class="text-2xl font-semibold text-gray-700">Tangent Lab</div>
+
+          <div>
+            <img src="/favicon.png" alt="Tangent Lab" class="size-8" />
+          </div>
+        </div>
+      </div>
+      <About />
+
+      <div class="flex justify-between items-center mt-16">
+        <div class="flex items-center">
+          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+          <div>
+            <span class="text-xl font-bold text-gray-800">Latest News</span>
+            <p class="text-sm text-gray-800">
+              Discover our latest updates and milestones
+            </p>
+          </div>
+        </div>
+        <Button on:click={() => navigate("news")} ariaLabel="View All  →" />
+      </div>
+
+      <div class="flex justify-between items-center  mt-16">
+        <div class="flex items-center">
+          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+          <div>
+            <span class="text-xl font-bold text-gray-800">Publications</span>
+            <p class="text-sm text-gray-800">
+            Explore Tangent Lab's cutting-edge research
+            </p>
+          </div>
+        </div>
+        <Button on:click={() => navigate("publications")} ariaLabel="View All  →" />
+      </div>
+      <Publications {publications}/>
+
+      <div class="flex justify-between items-center  mt-16">
+        <div class="flex items-center">
+          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+          <div>
+            <span class="text-xl font-bold text-gray-800">People</span>
+            <p class="text-sm text-gray-800">
+            Meet the minds shaping Tangent Lab's innovations
+            </p>
+          </div>
+        </div>
+        <Button on:click={() => navigate("people")} ariaLabel="View All  →" />
+      </div>
+      <People {people}  showAlumni={false} />        
+
+      <div class="flex justify-between items-center  mt-16">
+        <div class="flex items-center">
+          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+          <div>
+            <span class="text-xl font-bold text-gray-800">Contact Us</span>
+            <p class="text-sm text-gray-800">
+            Connect with Tangent Lab – Let’s create together
+            </p>
+          </div>
+        </div>
+      </div>
+      <Contact />
+
+      <Footer />
+    {/if}
+
+    {#if currentPage === "people"}
+      <div class="flex justify-between items-center my-6">
+        <div class="flex items-center">
+          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+          <div>
+            <span class="text-xl font-bold text-gray-800">Current Members</span>
+            <p class="text-sm text-gray-800">
+              Meet the brilliant minds driving Tangent Lab's groundbreaking projects
+            </p>
+          </div>
+        </div>
+      </div>
+      <People {people}/>
+      <Footer />
+    {/if}
+
+    {#if currentPage === "news"}
+      <Footer />
+    {/if}
+
+    {#if currentPage === "publications"}
+      <Publications {publications}/>
+      <Footer />
+    {/if}
+    
+  </div>
+</main>
+
+

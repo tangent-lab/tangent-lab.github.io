@@ -1,5 +1,8 @@
 <script lang="ts">
-  let { people } = $props();
+  let { people, showAlumni = true } = $props();
+
+  const currentStudents = people.filter(person => !person.alumni);
+  const alumniStudents = people.filter(person => person.alumni);
 </script>
 
 {#snippet personBlock(person)}
@@ -37,10 +40,11 @@
 <div class="my-4">
   <div class="font-semibold mb-1.5 hidden">People</div>
 
+  <!-- Current Students Section -->
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-    {#each people as person}
+    {#each currentStudents as person}
       {#if person?.url}
-        <a href={person.url} target="_blank" class=" cursor-pointer">
+        <a href={person.url} target="_blank" class="cursor-pointer">
           {@render personBlock(person)}
         </a>
       {:else}
@@ -48,4 +52,33 @@
       {/if}
     {/each}
   </div>
+
+
+  <!-- Alumni Section -->
+  {#if showAlumni}
+
+    <div class="flex justify-between items-center my-12 mb-6">
+      <div class="flex items-center">
+        <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
+        <div>
+          <span class="text-xl font-bold text-gray-800">Alumni</span>
+          <p class="text-sm text-gray-800">
+            Celebrating the successes of Tangent Lab's alumni across the globe
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {#each alumniStudents as person}
+        {#if person?.url}
+          <a href={person.url} target="_blank" class="cursor-pointer">
+            {@render personBlock(person)}
+          </a>
+        {:else}
+          {@render personBlock(person)}
+        {/if}
+      {/each}
+    </div>
+  {/if}
 </div>
