@@ -1,5 +1,8 @@
 <script lang="ts">
   let { publications } = $props();
+
+  const limitedPublications = publications.slice(0, 2);
+
 </script>
 
 <div class="my-4">
