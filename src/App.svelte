@@ -106,8 +106,9 @@
             </p>
           </div>
         </div>
-        <Button on:click={() => navigate("news")} ariaLabel="View All  →" />
+        <Button on:click={() => navigate("news")}  size="lg" ariaLabel="View All  →" />
       </div>
+      <News {news}/>        
 
       <div class="flex justify-between items-center  mt-16">
         <div class="flex items-center">
@@ -119,7 +120,7 @@
             </p>
           </div>
         </div>
-        <Button on:click={() => navigate("publications")} ariaLabel="View All  →" />
+        <Button on:click={() => navigate("publications")}  size="lg" ariaLabel="View All  →" />
       </div>
       <Publications {publications}/>
 
@@ -133,7 +134,7 @@
             </p>
           </div>
         </div>
-        <Button on:click={() => navigate("people")} ariaLabel="View All  →" />
+        <Button on:click={() => navigate("people")}  size="lg" ariaLabel="View All  →" />
       </div>
       <People {people}  showAlumni={false} />        
 
@@ -170,6 +171,7 @@
     {/if}
 
     {#if currentPage === "news"}
+      <News {news}/>        
       <Footer />
     {/if}
 
