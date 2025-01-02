@@ -43,14 +43,7 @@
       >
         Home
       </a>
-      <a
-        href="#people"
-        on:click={(e) => { e.preventDefault(); navigate("people"); }}
-        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
-          ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
-      >
-        People
-      </a>
+      
       <a
         href="#news"
         on:click={(e) => { e.preventDefault(); navigate("news"); }}
@@ -66,6 +59,14 @@
           ${currentPage === "publications" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         Publications
+      </a>
+      <a
+        href="#people"
+        on:click={(e) => { e.preventDefault(); navigate("people"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
+          ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        People
       </a>
   </div>
 </nav>
@@ -122,7 +123,7 @@
         </div>
         <Button on:click={() => navigate("publications")}  size="lg" ariaLabel="View All  →" />
       </div>
-      <Publications {publications}/>
+      <Publications {publications} showList={false} />
 
       <div class="flex justify-between items-center  mt-16">
         <div class="flex items-center">
