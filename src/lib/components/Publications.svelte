@@ -1,7 +1,7 @@
 <script lang="ts">
   let { publications } = $props();
 
-  const limitedPublications = publications.slice(0, 2);
+  const limitedPublications = publications.slice(0, 6);
 
 </script>
 
@@ -9,7 +9,7 @@
   <div class="font-semibold mb-1.5 hidden">Publications</div>
 
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    {#each publications as publication}
+    {#each limitedPublications as publication}
       <div
         class="relative flex flex-col justify-center rounded-lg group cursor-pointer"
       >
