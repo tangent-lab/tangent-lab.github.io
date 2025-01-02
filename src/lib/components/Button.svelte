@@ -3,36 +3,64 @@
 
   const dispatch = createEventDispatcher();
 
-  // 默认的可读性标签和按钮文案
+  export let size = 'lg';
   export let ariaLabel = 'View All';
+  export let href = null;
 
-  /**
-   * 当按钮被点击时，触发自定义 "click" 事件
-   */
+  $: sizeClasses = (
+    size === 'sm'
+      ? 'text-xs pl-3 pr-1 py-3 text-xs text-gray-900 bg-white bg-opacity-90'
+    : size === 'lg'
+      ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
+    : 
+      'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
+  );
+
   function handleClick(event) {
     dispatch('click', event);
   }
 </script>
 
-<button
-  type="button"
-  aria-label={ariaLabel}
-  on:click={handleClick}
-  class="
+
+{#if href}
+  <a
+    href={href}
+    class="
+    ${sizeClasses} 
     inline-flex         
     items-center          
-    text-gray-900
-    justify-center
-    pl-4 pr-2 py-3        
-    bg-gray-50       
+    justify-center 
     hover:bg-[#A6192E]    
     hover:text-white     
     rounded-md         
     transition-colors
     duration-200
   "
->
-  <span class="mr-1 text-sm font-medium">
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+  <span class="mr-1">
     {ariaLabel}
   </span>
-</button>
+</a>
+{:else}
+  <button
+    type="button"
+    on:click={handleClick}
+    class="
+      ${sizeClasses} 
+      inline-flex         
+      items-center          
+      justify-center 
+      hover:bg-[#A6192E]    
+      hover:text-white     
+      rounded-md         
+      transition-colors
+      duration-200
+    "
+  >
+    <span class="mr-1">
+      {ariaLabel}
+    </span>
+  </button>
+{/if}
