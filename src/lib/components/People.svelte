@@ -59,9 +59,8 @@
 
     <div class="flex justify-between items-center my-12 mb-6">
       <div class="flex items-center">
-        <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
         <div>
-          <span class="text-xl font-bold text-gray-800">Alumni</span>
+          <span class="font-secondary text-xl font-bold text-gray-800">Alumni</span>
           <p class="text-sm text-gray-800">
             Celebrating the successes of Tangent Lab's alumni across the globe
           </p>
