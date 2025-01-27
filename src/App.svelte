@@ -9,8 +9,13 @@
   import { publications } from './data/publications.js';
   import { news } from './data/news.js';
   import Button from "./lib/components/Button.svelte";
+  import PublicationDetail from './lib/components/PublicationDetail.svelte';
+  import NewsDetail from './lib/components/NewsDetail.svelte';
 
   let currentPage = "home"; 
+  let isMenuOpen = false;
+  let selectedPublication = null;
+  let selectedNews = null;
 
   currentPage = location.hash.replace("#", "") || "home";
 
@@ -18,8 +23,11 @@
     currentPage = location.hash.replace("#", "") || "home";
   });
 
-  const navigate = (page) => {
+  const navigate = (page, news = null, publication = null) => {
+    selectedPublication = publication;
+    selectedNews = news;
     currentPage = page;
+    isMenuOpen = false; 
     history.pushState(null, "", `#${page}`);
     window.scrollTo(0, 0);
   };
@@ -27,48 +35,101 @@
 
 
 <nav class="bg-transparent fixed top-0 left-0 w-full z-50">
-  <div class="bg-white bg-opacity-90 flex justify-between items-center max-w-6xl mx-auto px-6 py-4 rounded-lg shadow-md">
+  <div class="
+    bg-white bg-opacity-90
+    max-w-6xl mx-auto
+    px-6 py-4
+    rounded-lg shadow-md
+    flex items-center justify-between
+  ">
 
     <div class="flex items-center">
       <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
       <span class="text-xl font-bold text-gray-800">Tangent Lab</span>
     </div>
 
-    <div class="flex space-x-4">
+    <div class="hidden md:flex space-x-4">
       <a
         href="#home"
         on:click={(e) => { e.preventDefault(); navigate("home"); }}
-        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
-          ${currentPage === "home" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "home" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         Home
       </a>
-      
       <a
         href="#news"
         on:click={(e) => { e.preventDefault(); navigate("news"); }}
-        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
-          ${currentPage === "news" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "news" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         News
       </a>
       <a
         href="#publications"
         on:click={(e) => { e.preventDefault(); navigate("publications"); }}
-        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
-          ${currentPage === "publications" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "publications" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         Publications
       </a>
       <a
         href="#people"
         on:click={(e) => { e.preventDefault(); navigate("people"); }}
-        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white transition-colors rounded-md
-          ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         People
       </a>
+    </div>
   </div>
+
+  {#if isMenuOpen}
+    <div class="bg-white bg-opacity-90 shadow-md md:hidden">
+      <div class="flex flex-col space-y-2 px-6 py-4">
+        <a
+          href="#home"
+          on:click={(e) => { e.preventDefault(); navigate("home"); }}
+          class={`block px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                  transition-colors rounded-md
+                  ${currentPage === "home" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        >
+          Home
+        </a>
+        <a
+          href="#news"
+          on:click={(e) => { e.preventDefault(); navigate("news"); }}
+          class={`block px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                  transition-colors rounded-md
+                  ${currentPage === "news" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        >
+          News
+        </a>
+        <a
+          href="#publications"
+          on:click={(e) => { e.preventDefault(); navigate("publications"); }}
+          class={`block px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                  transition-colors rounded-md
+                  ${currentPage === "publications" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        >
+          Publications
+        </a>
+        <a
+          href="#people"
+          on:click={(e) => { e.preventDefault(); navigate("people"); }}
+          class={`block px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                  transition-colors rounded-md
+                  ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
+        >
+          People
+        </a>
+      </div>
+    </div>
+  {/if}
 </nav>
 
 
@@ -98,57 +159,25 @@
       <About />
 
       <div class="flex justify-between items-center mt-16">
-        <div class="flex items-center">
-          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
-          <div>
-            <span class="text-xl font-bold text-gray-800">Latest News</span>
-            <p class="text-sm text-gray-800">
-              Discover our latest updates and milestones
-            </p>
-          </div>
-        </div>
+        <span class="text-2xl font-semibold text-gray-800">Latest News</span>
         <Button on:click={() => navigate("news")}  size="lg" ariaLabel="View All  →" />
       </div>
-      <News {news}/>        
+      <News {news}  showAll={false} on:selectNews={(e) => navigate("newsDetail", e.detail, null)}  />        
 
       <div class="flex justify-between items-center  mt-16">
-        <div class="flex items-center">
-          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
-          <div>
-            <span class="text-xl font-bold text-gray-800">Publications</span>
-            <p class="text-sm text-gray-800">
-            Explore Tangent Lab's cutting-edge research
-            </p>
-          </div>
-        </div>
+        <span class="text-2xl font-semibold text-gray-800">Publications</span>
         <Button on:click={() => navigate("publications")}  size="lg" ariaLabel="View All  →" />
       </div>
-      <Publications {publications} showList={false} />
+      <Publications {publications} showList={false} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
 
       <div class="flex justify-between items-center  mt-16">
-        <div class="flex items-center">
-          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
-          <div>
-            <span class="text-xl font-bold text-gray-800">People</span>
-            <p class="text-sm text-gray-800">
-            Meet the minds shaping Tangent Lab's innovations
-            </p>
-          </div>
-        </div>
+          <span class="text-2xl font-semibold text-gray-800">People</span>
         <Button on:click={() => navigate("people")}  size="lg" ariaLabel="View All  →" />
       </div>
       <People {people}  showAlumni={false} />        
 
       <div class="flex justify-between items-center  mt-16">
-        <div class="flex items-center">
-          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
-          <div>
-            <span class="text-xl font-bold text-gray-800">Contact Us</span>
-            <p class="text-sm text-gray-800">
-            Connect with Tangent Lab – Let’s create together
-            </p>
-          </div>
-        </div>
+        <span class="text-2xl font-semibold text-gray-800">Contact Us</span>
       </div>
       <Contact />
 
@@ -158,9 +187,8 @@
     {#if currentPage === "people"}
       <div class="flex justify-between items-center my-6">
         <div class="flex items-center">
-          <img src="/favicon.png" alt="Lab Logo" class="h-10 w-auto mr-4" />
           <div>
-            <span class="text-xl font-bold text-gray-800">Current Members</span>
+            <span class="font-secondary text-xl font-bold text-gray-800">Current Members</span>
             <p class="text-sm text-gray-800">
               Meet the brilliant minds driving Tangent Lab's groundbreaking projects
             </p>
@@ -172,15 +200,24 @@
     {/if}
 
     {#if currentPage === "news"}
-      <News {news}/>        
+      <News {news} on:selectNews={(e) => navigate("newsDetail", e.detail, null)}  />          
       <Footer />
     {/if}
 
     {#if currentPage === "publications"}
-      <Publications {publications}/>
+      <Publications {publications} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
       <Footer />
     {/if}
     
+    {#if currentPage === "publicationDetail"}
+      <PublicationDetail publication={selectedPublication} />
+      <Footer />
+    {/if}
+
+    {#if currentPage === "newsDetail"}
+      <NewsDetail news={selectedNews} />
+      <Footer />
+    {/if}
   </div>
 </main>
 
