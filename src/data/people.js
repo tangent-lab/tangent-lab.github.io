@@ -2,19 +2,19 @@ export const people = [
     {
       image: "/assets/images/people/Lawrence.png",
       name: "Prof. Lawrence Kim",
-      title: "Assistant Professor of Computer Science",
+      title: "Assistant Professor",
       links: [
         {
           title: "Website",
           url: "https://www.lhkim.com/",
         },
         {
-          title: "Twitter",
-          url: "https://twitter.com/lawhkim",
-        },
-        {
           title: "Email",
           url: "mailto:lawkim@sfu.ca",
+        },
+        {
+          title: "X",
+          url: "https://twitter.com/lawhkim",
         },
       ],
       url: "",
@@ -23,7 +23,17 @@ export const people = [
       image: "/assets/images/people/Xueying.png",
       name: "Xueying Zhang",
       title: "PhD Student",
-      url: "",
+      url: "https://zhangxueying720.wixsite.com/xueying",
+      links: [
+        {
+          title: "Website",
+          url: "https://zhangxueying720.wixsite.com/xueying",
+        },
+        {
+          title: "Email",
+          url: "mailto:xueying_zhang@sfu.ca",
+        },
+      ],
     },
     {
       image: "/assets/images/people/Duc.png",
@@ -36,12 +46,24 @@ export const people = [
       name: "Sarah Pratt",
       title: "Thesis MSc Student",
       url: "",
+      links:[
+        {
+          title:"Email",
+          url:"mailto:sarah_pratt_2@sfu.ca",
+        },
+      ]
     },
     {
       image: "/assets/images/people/Qihan.png",
       name: "Qihan Gao",
       title: "Thesis MSc Student",
       url: "",
+      links: [
+        {
+          title: "Email",
+          url: "mailto:qihan_gao@sfu.ca",
+        },
+      ],
     },
     {
       image: "/assets/images/people/Tim.png",
@@ -60,6 +82,16 @@ export const people = [
       name: "Ayana Hussain",
       title: "Undergraduate Student",
       url: "",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/ayana-hussain",
+        },
+        {
+          title: "Email",
+          url: "mailto:ayana.hussainschool@gmail.com",
+        },
+      ],
     },
   
     {
