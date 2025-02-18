@@ -1,4 +1,57 @@
 export const publications = [
+  /*
+  {
+    title:
+      "DiminishAR: Diminishing Visual Distractions via Holographic AR Displays",
+    abstract:"Coming soon",
+    authors: "JangHyeon Lee, Lawrence Kim",
+    institutions: "Simon Fraser University",
+    venue: "CHI 2025",
+    year: 2025,
+    tags: ["accepted"],
+    image:"/assets/images/publications/DiminishAR.gif",
+    links: [
+      {
+        title: "To Be Released",
+        url: "",
+      },
+    ],
+  },
+  {
+    title:
+      "Co-Design and Evaluation of Visual Interventions for Head Posture Correction in Virtual Reality Games",
+    abstract:"Coming soon",
+    authors: "Minh Duc Dang, Duy Phuoc Luong, Christopher Napier, Lawrence Kim",
+    institutions: "Simon Fraser University",
+    venue: "CHI 2025",
+    year: 2025,
+    tags: ["accepted"],
+    image:"/assets/images/publications/VR Posture.png",
+    links: [
+      {
+        title: "To Be Released",
+        url: "",
+      },
+    ],
+  },
+  {
+    title:
+      "User-Defined Co-Speech Gesture Design with Swarm Robots",
+    abstract:"Coming soon",
+    authors: "Minh Duc Dang, Samira Pulatova, Lawrence Kim",
+    institutions: "Simon Fraser University",
+    venue: "CHI 2025",
+    year: 2025,
+    tags: ["accepted"],
+    image:"/assets/images/publications/SwarmCoSpeechGesture.gif",
+    links: [
+      {
+        title: "To Be Released",
+        url: "",
+      },
+    ],
+  },
+  */
   {
     title:
       "Co-Designing Programmable Fidgeting Experience with Swarm Robots for Adults with ADHD",
@@ -8,7 +61,6 @@ export const publications = [
     institutions: "Simon Fraser University",
     venue: "ASSETS 2024",
     year: 2024,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/codesign.gif",
     links: [
@@ -32,7 +84,6 @@ export const publications = [
     institutions: "Simon Fraser University, Spoon AI",
     venue: "IROS 2024",
     year: 2024,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/IROS.gif",
     links: [
@@ -56,13 +107,12 @@ export const publications = [
     institutions: "Simon Fraser University",
     venue: "CHI 2024",
     year: 2024,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/multi-robot.gif",
     links: [
       {
         title: "Video",
-        url: "https://youtu.be/_plPdD05mSQ?si=TByzesYJDYGhXsJl",
+        url: "https://www.youtube.com/watch?v=_plPdD05mSQ",
       },
       {
         title: "Presentation",
@@ -84,7 +134,6 @@ export const publications = [
     institutions: "Simon Fraser University",
     venue: "UIST 2023",
     year: 2023,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/swarmfidget.gif",
     links: [
@@ -122,7 +171,7 @@ export const publications = [
       Conclusions:
       These results suggest that the shared autonomy desk is the optimal level of automation in terms of both user preferences and estimated projected health outcomes. Demographics such as culture and sex had significant effects on how receptive users were to autonomous intervention. As familiarity improves the likelihood of adoption, we propose a gradual behavior change intervention to increase acceptance and adherence, especially for populations with a high desire for control.
       `,
-    authors: "Chuxuan Zhang, Bermet Burkanova, Lawrence Kim, Lauren Yip, Ugo Cupcic, Stéphane Lallée, Angelica Lim",
+    authors: "Lawrence Kim, Gourab Saha, Annel Amelia Leon, Abby C. King, Matthew L. Mauriello, Pablo E. Paredes",
     institutions: "Simon Fraser University, Stanford University, University of Delaware, University of Maryland",
     venue: "JMIR Formative Research 2022",
     year: 2022,
@@ -146,7 +195,6 @@ export const publications = [
     institutions: "",
     venue: "RO-MAN 2022",
     year: 2022,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/ROMAN.gif",
     links: [
@@ -165,7 +213,6 @@ export const publications = [
     institutions: "",
     venue: "RA-L 2022",
     year: 2022,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/RoboticPresence.gif",
     links: [
@@ -179,12 +226,11 @@ export const publications = [
     title:
       "Linear Predictive Coding for Acute Stress Prediction from Computer Mouse Movements",
     abstract:
-      "",
+      "Prior work demonstrated the potential of using the Linear Predictive Coding (LPC) filter to approximate muscle stiffness and damping from computer mouse movements to predict acute stress levels of users. Theoretically, muscle stiffness and damping in the arm can be estimated using a mass-spring-damper (MSD) biomechanical model. However, the damping frequency (i.e., stiffness) and damping ratio values derived using LPC were not yet compared with those from a theoretical MSD model. This work demonstrates that the damping frequency and damping ratio from LPC are significantly correlated with those from an MSD model, thus confirming the validity of using LPC to infer muscle stiffness and damping. We also compare the stress level binary classification performance using the values from LPC and MSD with each other and with neural network-based baselines. We found comparable performance across all conditions demonstrating LPC and MSD model-based stress prediction efficacy, especially for longer mouse trajectories.",
     authors: "Lawrence Kim, Rahul Goel, Jia Liang, Mert Pilanci, Pablo E. Paredes",
     institutions: "",
     venue: "EMBC 2021",
     year: 2021,
-    type: 'Conference',
     tags: [],
     image: "/assets/images/publications/mousemoving.gif",
     links: [
@@ -228,8 +274,8 @@ export const publications = [
     institutions: "",
     venue: "HRI 2021 Companion",
     year: 2021,
-    type: '',
-    tags: ["Best LBR Award Nominee"],
+    award: "Best LBR Award Nominee",
+    tags: ["mention"],
     image: "/assets/images/publications/Haunted_Desk.gif",
     links: [
       {
@@ -299,8 +345,8 @@ export const publications = [
     institutions: "",
     venue: "CHI 2020",
     year: 2020,
-    type: '',
-    tags: ["Best Paper Honorable Mention"],
+    award: 'Best Paper Honorable Mention',
+    tags: ["mention"],
     image: "/assets/images/publications/control.gif",
     links: [
       {
@@ -347,8 +393,8 @@ export const publications = [
     institutions: "",
     venue: "CHI 2019",
     year: 2019,
-    type: '',
-    tags: ["Best Paper Honorable Mention"],
+    award: 'Best Paper Honorable Mention',
+    tags: ["mention"],
     image: "/assets/images/publications/haptics.gif",
     links: [
       {
@@ -439,8 +485,8 @@ export const publications = [
     institutions: "",
     venue: "UIST 2016",
     year: 2016,
-    type: '',
-    tags: ["Best Paper Award"],
+    award: 'Best Paper Award',
+    tags: ["best"],
     image: "/assets/images/publications/Zooids.gif",
     links: [
       {

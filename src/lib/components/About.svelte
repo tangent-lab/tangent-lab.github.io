@@ -6,8 +6,7 @@
       <div>
         <div class="text-xl font-semibold">
           <div class="font-secondary font-medium">
-            We design the interfaces of tomorrow by combining human-computer
-            interaction, robotics, haptics, and AI.
+            We design the interfaces of the future by integrating human-computer interaction, robotics, haptics, AR/VR, and AI.
           </div>
         </div>
 
@@ -21,30 +20,15 @@
       <div class="flex justify-end">
         <div class="mt-auto text-sm text-gray-700 flex flex-col gap-3">
           <div>
-            We focus on creating affective, tangible interfaces that enable
-            meaningful interaction with technology while promoting physical and
-            mental well-being. By leveraging human abilities like spatial
-            cognition, emotional connection, we develop cutting-edge systems
-            that bridge the digital and physical worlds.
+            The SFU Tangent Lab, led by Prof. Lawrence Kim, explores how emerging technologies can foster more affective and tangible interactions, empowering individuals toward self-actualization. We believe that human-centered interfaces should seamlessly bridge the digital and physical worlds, leveraging innate abilities such as spatial cognition and emotional connection.
           </div>
 
           <div>
-            Our research spans interactive tangible displays, haptic interfaces,
-            and AI-powered tools to enhance remote collaboration, creative
-            design, education, therapy, and accessibility.
+            Our research combines human-computer interaction, robotics, haptics, AR/VR, and AI to develop novel interaction systems. Specifically, we create interactive tangible displays, haptic interfaces, immersive AR/VR environments, and AI-powered tools designed to enhance physical and mental well-being, remote collaboration, productivity, creativity, education, therapy, and accessibility. To achieve these goals, we employ an iterative prototyping and human-centered design approach, while conducting user studies to deepen our understanding of human perception and interaction.
           </div>
 
           <div>
-            Guided by iterative prototyping, human-centered design, and studies
-            on human perception, we aim to shape the future of how people
-            interact with technology.
-          </div>
-
-          <div>
-            Recognized with awards from CHI, UIST, and HRI, as well as Fast
-            Company’s Innovation by Design, Tangent Lab is redefining the role
-            of technology in creating more human-focused and empathetic
-            interactions.
+            Tangent Lab is affiliated with SFU’s ixLab and the SFU Visual & Interactive Computing Institute (VINCI). Our work has been recognized with awards from CHI, UIST, and HRI, as well as Fast Company’s Innovation by Design, underscoring our commitment to redefining the role of technology in enriching human experiences.
           </div>
         </div>
       </div>

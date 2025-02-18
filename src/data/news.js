@@ -1,4 +1,5 @@
 export const news = [
+  /*
   {
     title: "Seeking Prospective Students",
     date: "Jan, 2025",
@@ -8,6 +9,7 @@ export const news = [
     tag:"Position",
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
+  */
   {
     title: "Three Papers Conditionally Accepted to CHI 2025",
     date: "Jan, 2025",
@@ -38,7 +40,7 @@ export const news = [
   {
     title: "Samira Presented at ASSETS 2024",
     date: "Nov, 2024",
-    description: "Samira gave a talk about her latest research at ASSETS 2024 conference.",
+    description: "Samira gave a talk about her latest research at ASSETS 2024 conference. Individuals with ADHD grapple with elevated stress levels, emotional regulation challenges, and difficulty sustaining focus. Fidgeting, a behavior traditionally frowned upon, has been shown to help people with ADHD in concentration, emotional and mental state management, and energy regulation. However, traditional fidgeting devices have limited fixed affordances providing cookie-cutter style fidgeting experience to all despite individual differences. Recognizing the uniqueness of individual fidgeting tendencies, we use small tabletop robots to provide a customizable fidgeting interaction experience and conduct co-design sessions with 16 adults diagnosed with ADHD to explore how they envision their fidgeting interactions being changed with these programmable robots. We examine core elements defining a successful fidgeting interaction with robots, assess the significance of customizability in these interactions and any common trends among participants, and investigate additional advantages that interactions with robots may offer. This research reveals nuanced preferences of adults with ADHD concerning robot-assisted fidgeting.",
     url: "https://www.youtube.com/watch?v=vglfyKbNiHE",
     image: "/assets/images/news/ASSETS’24.png",
     tag:"News",
