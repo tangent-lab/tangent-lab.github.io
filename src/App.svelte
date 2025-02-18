@@ -48,6 +48,27 @@
       <span class="text-xl font-bold text-gray-800">Tangent Lab</span>
     </div>
 
+    <button
+      class="md:hidden inline-flex items-center justify-center p-2
+      text-gray-600 hover:text-black
+      focus:outline-none transition-colors"
+      on:click={() => (isMenuOpen = !isMenuOpen)}
+    >
+      <svg
+        class="h-6 w-6"
+        stroke="currentColor"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+
     <div class="hidden md:flex space-x-4">
       <a
         href="#home"
@@ -84,6 +105,15 @@
                 ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
         People
+      </a>
+      <a
+        href="#contact"
+        on:click={(e) => { e.preventDefault(); navigate("contact"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "contact" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        Contact
       </a>
     </div>
   </div>
@@ -126,12 +156,19 @@
                   ${currentPage === "people" ? "bg-gray-50 bg-opacity-80" : ""}`}
         >
           People
-        </a>
+        </a><a
+        href="#contact"
+        on:click={(e) => { e.preventDefault(); navigate("contact"); }}
+        class={`px-4 py-2 font-medium hover:bg-[#A6192E] hover:text-white
+                transition-colors rounded-md
+                ${currentPage === "contact" ? "bg-gray-50 bg-opacity-80" : ""}`}
+      >
+        Contact
+      </a>
       </div>
     </div>
   {/if}
 </nav>
-
 
 <main class="min-h-screen w-screen bg-white flex justify-center">
   <div class="w-full max-w-6xl py-6 p-3 mt-16">
@@ -165,7 +202,7 @@
       <News {news}  showAll={false} on:selectNews={(e) => navigate("newsDetail", e.detail, null)}  />        
 
       <div class="flex justify-between items-center  mt-16">
-        <span class="text-2xl font-semibold text-gray-800">Publications</span>
+        <span class="text-2xl font-semibold text-gray-800">Selected Projects</span>
         <Button on:click={() => navigate("publications")}  size="lg" ariaLabel="View All  →" />
       </div>
       <Publications {publications} showList={false} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
@@ -179,7 +216,7 @@
       <div class="flex justify-between items-center  mt-16">
         <span class="text-2xl font-semibold text-gray-800">Contact Us</span>
       </div>
-      <Contact />
+      <Contact   showAll={false} />
 
       <Footer />
     {/if}
@@ -208,6 +245,11 @@
       <Publications {publications} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
       <Footer />
     {/if}
+
+    {#if currentPage === "contact"}
+      <Contact  />
+      <Footer />
+    {/if}
     
     {#if currentPage === "publicationDetail"}
       <PublicationDetail publication={selectedPublication} />
@@ -218,6 +260,7 @@
       <NewsDetail news={selectedNews} />
       <Footer />
     {/if}
+    
   </div>
 </main>
 
