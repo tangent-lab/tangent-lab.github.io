@@ -11,7 +11,34 @@
 {#if publication}
   <section class="hero">
     <div class="my-6">
-      <div class="font-medium">{publication.venue}</div>
+      <p class="text-gray-700 flex items-center">
+
+        <span class="font-medium my-2 mr-2">{publication.venue}</span>
+        {#if publication.award}
+          {#if publication.tags?.includes('best')}
+              <span 
+              class="material-symbols-outlined align-middle text-amber-400 my-2" 
+              title="Best Paper"
+            >
+              trophy
+            </span>
+          {/if}
+          {#if publication.tags?.includes('mention')}
+            <span 
+              class="material-symbols-outlined align-middle text-amber-400 my-2" 
+              title="Honorable Mention"
+            >
+              workspace_premium
+            </span>
+          {/if}
+          <span class="text-sm text-amber-400 font-medium my-2">
+            {publication.award}
+          </span>
+
+        {/if}
+      </p>
+
+
       <div class="font-secondary font-bold text-xl mt-2">{publication.title}</div>
       <div class="mt-2 italic">
         {publication.authors}

@@ -3,6 +3,7 @@ export const people = [
       image: "/assets/images/people/Lawrence.png",
       name: "Prof. Lawrence Kim",
       title: "Assistant Professor",
+      url:"https://www.lhkim.com/",
       links: [
         {
           title: "Website",
@@ -17,7 +18,6 @@ export const people = [
           url: "https://twitter.com/lawhkim",
         },
       ],
-      url: "",
     },
     {
       image: "/assets/images/people/Xueying.png",
@@ -39,7 +39,13 @@ export const people = [
       image: "/assets/images/people/Duc.png",
       name: "Duc Dang",
       title: "Thesis MSc Student",
-      url: "",
+      url: "https://www.linkedin.com/in/dmdang/",
+      links:[
+        {
+          title:"LinkedIn",
+          url:"https://www.linkedin.com/in/dmdang/",
+        },
+      ]
     },
     {
       image: "/assets/images/people/Sarah.png",
@@ -75,13 +81,19 @@ export const people = [
       image: "/assets/images/people/Gary.png",
       name: "Gary(Huayu) Wang",
       title: "Professional MSc Student",
-      url: "",
+      url: "https://www.linkedin.com/in/gary-why/",
+      links:[
+        {
+          title:"LinkedIn",
+          url: "https://www.linkedin.com/in/gary-why/",
+        }
+      ]
     },
     {
       image: "/assets/images/people/Ayana.png",
       name: "Ayana Hussain",
       title: "Undergraduate Student",
-      url: "",
+      url: "https://www.linkedin.com/in/ayana-hussain",
       links: [
         {
           title: "LinkedIn",
@@ -99,14 +111,26 @@ export const people = [
       name: "Janghyeon Lee",
       title: "Professional MSc, 2023",
       alumni: true,
-      url: "",
+      url: "https://janghyeon-lee.github.io/",
+      links:[
+        {
+          title:"Now PhD Student at University of Minnesota",
+          url: "https://janghyeon-lee.github.io/",
+        }
+      ]
     },
     {
       image: "/assets/images/people/jiadi.jpeg",
       name: "Jiadi(Tian) Luo",
       title: "BSc, 2024",
       alumni: true,
-      url: "",
+      url: "https://jiadil.github.io/portfolio/",
+      links:[
+        {
+          title:"Now MS student at Northeastern University",
+          url: "https://jiadil.github.io/portfolio/",
+        }
+      ]
     },
     {
       image: "/assets/images/people/samira.jpeg",
@@ -115,6 +139,27 @@ export const people = [
       alumni: true,
       url: "",
     },
+    {
+      image: "/assets/images/people/keeyan.jpeg",
+      name: "Keeyan Kazemi",
+      title: "BSc, 2023",
+      alumni: true,
+      url: "https://www.linkedin.com/in/keeyan-kazemi/",
+      links:[
+        {
+          title:"Now Associate Developer Associate Developer at Bit Complete",
+          url:"https://www.linkedin.com/in/keeyan-kazemi/",
+        }
+      ]
+    },
+    {
+      image: "/assets/images/user.png",
+      name: "Duy Phuoc (Peter) Lee",
+      title: "BSc",
+      alumni: true,
+      url: "",
+    },
+    /*
     {
       image: "/assets/images/100.png",
       name: "Seeking exceptional students",
@@ -128,4 +173,5 @@ export const people = [
         },
       ],
     },
+    */
   ]

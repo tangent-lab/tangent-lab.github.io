@@ -6,7 +6,7 @@
 </script>
 
 {#snippet personBlock(person)}
-  <div class="relative flex flex-col justify-center rounded-lg">
+  <div class="relative flex flex-col justify-center rounded-lg group cursor-pointer">
     <img
       src={person.image ?? "/assets/images/user.png"}
       alt={person.name}
@@ -18,7 +18,7 @@
     ></div>
 
     <div class=" absolute bottom-0 text-white p-4">
-      <div class=" mt-1 font-medium">{person.name}</div>
+      <div class=" mt-1 mb-1.5 group-hover:underline font-medium cursor-pointer line-clamp-2">{person.name}</div>
       <div class="text-sm">{person.title}</div>
 
       <div class="flex gap-1.5 mt-1">
@@ -38,7 +38,6 @@
 {/snippet}
 
 <div class="my-4">
-  <div class="font-semibold mb-1.5 hidden">People</div>
 
   <!-- Current Students Section -->
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -57,7 +56,7 @@
   <!-- Alumni Section -->
   {#if showAlumni}
 
-    <div class="flex justify-between items-center my-12 mb-6">
+    <div class="flex justify-between items-center mt-16 mb-6">
       <div class="flex items-center">
         <div>
           <span class="font-secondary text-xl font-bold text-gray-800">Alumni</span>
