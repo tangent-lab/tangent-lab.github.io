@@ -12,6 +12,8 @@
       ? 'text-xs pl-3 pr-1 py-3 text-xs text-gray-900 bg-white bg-opacity-90'
     : size === 'lg'
       ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
+    : size === 'xl'
+      ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium bg-white text-gray-900 bg-gray-50'
     : 
       'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
   );

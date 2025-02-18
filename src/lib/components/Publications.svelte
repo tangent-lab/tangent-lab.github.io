@@ -142,8 +142,35 @@
                   alt={pub.title}
                   class="rounded-lg w-1/4 aspect-w-4 aspect-h-3 object-cover"
                 />
+
               <div class="w-3/4 px-8 py-6 bg-gray-50 rounded-lg cursor-pointer hover:shadow-md transition-shadow ">
-                <div class="text-sm font-medium mb-2">{pub.venue}</div>
+                <p class="flex items-center">
+
+                  <span class="text-sm font-medium mr-2 mb-2">{pub.venue}</span>
+                  {#if pub.award}
+                    {#if pub.tags?.includes('best')}
+                        <span 
+                        class="material-symbols-outlined align-middle text-amber-400 mb-2" 
+                        title="Best Paper"
+                      >
+                        trophy
+                      </span>
+                    {/if}
+                    {#if pub.tags?.includes('mention')}
+                      <span 
+                        class="material-symbols-outlined align-middle text-amber-400 mb-2" 
+                        title="Honorable Mention"
+                      >
+                        workspace_premium
+                      </span>
+                    {/if}
+                    <span class="text-sm text-amber-400 font-medium mb-2">
+                      {pub.award}
+                    </span>
+          
+                  {/if}
+                </p>
+
                 <a
                     href="#"
                     onclick={() => {
