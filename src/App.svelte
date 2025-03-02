@@ -113,7 +113,7 @@
                 transition-colors rounded-md
                 ${currentPage === "contact" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
-        Contact
+      Contact & Apply
       </a>
     </div>
   </div>
@@ -163,7 +163,7 @@
                 transition-colors rounded-md
                 ${currentPage === "contact" ? "bg-gray-50 bg-opacity-80" : ""}`}
       >
-        Contact
+      Contact & Apply
       </a>
       </div>
     </div>
@@ -193,6 +193,7 @@
           </div>
         </div>
       </div>
+      
       <About />
 
       <div class="flex justify-between items-center mt-16">
@@ -215,6 +216,7 @@
 
       <div class="flex justify-between items-center  mt-16">
         <span class="text-2xl font-semibold text-gray-800">Contact Us</span>
+        <Button on:click={() => navigate("contact")}  size="lg" ariaLabel="View More  →" />
       </div>
       <Contact   showAll={false} />
 

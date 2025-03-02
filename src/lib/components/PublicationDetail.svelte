@@ -69,6 +69,23 @@
     </div>
   </section>
 
+  {#if publication.image}
+  <section class="section my-12">
+    <div class="flex place-content-center">
+      <img src={publication.image} alt={publication.title} class="rounded-lg" />
+    </div>
+  </section>
+  {/if}
+
+
+  <section class="section hero is-light mb-24">
+    <h2 class="font-medium">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>{publication.abstract}</p>
+    </div>
+  </section>
+
+
   {#if publication.links && publication.links.find(link => link.title === "Presentation")}
     <section class="hero teaser">
       <div class="my-6">
@@ -82,13 +99,6 @@
       </div>
     </section>
   {/if}
-
-  <section class="section hero is-light">
-    <h2 class="font-medium">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>{publication.abstract}</p>
-    </div>
-  </section>
 
   {#if publication.images && publication.images.length > 0}
   <section class="hero is-small">
