@@ -28,6 +28,24 @@ export const news = [
     Congratulations to all the authors for their incredible contributions!
   `
   },
+
+  /*
+  {
+    title: "Tangent Lab Holiday Party 2024",
+    date: "Dec, 2024",
+    description: "Wrapped up the year with a home-cooked feast, chaotic White Elephant trades, and some intense card games 🎁🎄 Grateful for the amazing Tangent Lab crew—here’s to another year of innovation and fun! 🥂✨",
+    url: "",
+    image:"/assets/images/news/IMG_8506.jpg",
+    tag:"News",
+    article:
+    `
+    Wrapped up 2024 with a feast, laughter, and festive chaos! 🍽️🎁 
+    After a hearty dinner, the lab dove into a White Elephant gift exchange, filled with surprises, steals, and plenty of holiday spirit. 
+    A perfect way to celebrate the end of the year with an amazing team! ✨🥂
+  `
+  },
+  */
+
   {
     title: "Sarah Presented at VINCI Event",
     date: "Dec, 2024",
@@ -37,6 +55,7 @@ export const news = [
     tag:"News",
     article:"Held at SFU’s Harbour Centre, the first public VINCI event opened with remarks from SFU’s Vice-President, Research and International, Dugan O’Neil, and VINCI co-directors Parmit Chilana and Manolis Savva. ",
   },
+  
   {
     title: "Samira Presented at ASSETS 2024",
     date: "Nov, 2024",
@@ -54,6 +73,48 @@ export const news = [
     image: "/assets/images/news/chi24.png",
     tag:"News",
     article:"",
+  },
+
+  {
+    title: "Tangent Lab Holiday Party!",
+    date: "Dec, 2023",
+    description: "Wrapped up the year with a home-cooked feast, chaotic White Elephant trades, and some intense card games 🎁🎄 Grateful for the amazing Tangent Lab crew—here’s to another year of innovation and fun! 🥂✨",
+    url: "",
+    image:"/assets/images/news/2023.12-Holiday Large.jpeg",
+    tag:"News",
+    article:
+    `
+    Wrapped up the year with a home-cooked feast, chaotic White Elephant trades, and some intense card games 🎁🎄
+    Grateful for the amazing Tangent Lab crew—here’s to another year of innovation and fun! 🥂✨
+  `
+  },
+
+  {
+    title: "Tangent Lab at UIST 2023",
+    date: "Oct, 2023",
+    description: "Samira, JangHyeon, Tian, and Lawrence presented a paper and demo on SwarmFidget at UIST 2023.",
+    url: "",
+    image:"/assets/images/news/UIST23.png",
+    tag:"News",
+    article:
+    `
+    Samira, JangHyeon, Tian, and Lawrence presented a paper and demo on SwarmFidget at UIST 2023.
+
+  `
+  },
+
+  {
+    title: "Tangent Lab @Stanley Park!",
+    date: "Jul, 2023",
+    description: "Rolling into summer with Tangent Lab! ☀️🛼🚴 A perfect day of biking, rollerblading, and a Gimbap picnic at Stanley Park—good vibes, great views, and even better company!",
+    url: "",
+    image:"/assets/images/news/2023.07-Stanley Park Large.jpeg",
+    tag:"News",
+    article:
+    `
+    Rolling into summer with Tangent Lab! ☀️🛼🚴 
+    A perfect day of biking, rollerblading, and a Gimbap picnic at Stanley Park—good vibes, great views, and even better company!
+  `
   },
 ];
   

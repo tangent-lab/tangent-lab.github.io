@@ -10,11 +10,7 @@
           </div>
         </div>
 
-        <div class="mt-2 text-sm flex-1 flex flex-col">
-          <div class="font-medium text-gray-800">
-            Tangent Lab, led by Prof. Lawrence Kim.
-          </div>
-        </div>
+        
       </div>
 
       <div class="flex justify-end">
