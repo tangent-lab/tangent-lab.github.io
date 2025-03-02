@@ -1,9 +1,8 @@
 export const publications = [
-  /*
   {
     title:
       "DiminishAR: Diminishing Visual Distractions via Holographic AR Displays",
-    abstract:"Coming soon",
+    abstract:"Full Details to be Released.",
     authors: "JangHyeon Lee, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
@@ -11,16 +10,12 @@ export const publications = [
     tags: ["accepted"],
     image:"/assets/images/publications/DiminishAR.gif",
     links: [
-      {
-        title: "To Be Released",
-        url: "",
-      },
     ],
   },
   {
     title:
       "Co-Design and Evaluation of Visual Interventions for Head Posture Correction in Virtual Reality Games",
-    abstract:"Coming soon",
+    abstract:"Full Details to be Released.",
     authors: "Minh Duc Dang, Duy Phuoc Luong, Christopher Napier, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
@@ -28,16 +23,12 @@ export const publications = [
     tags: ["accepted"],
     image:"/assets/images/publications/VR Posture.png",
     links: [
-      {
-        title: "To Be Released",
-        url: "",
-      },
     ],
   },
   {
     title:
       "User-Defined Co-Speech Gesture Design with Swarm Robots",
-    abstract:"Coming soon",
+    abstract:"Full Details to be Released.",
     authors: "Minh Duc Dang, Samira Pulatova, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
@@ -45,13 +36,9 @@ export const publications = [
     tags: ["accepted"],
     image:"/assets/images/publications/SwarmCoSpeechGesture.gif",
     links: [
-      {
-        title: "To Be Released",
-        url: "",
-      },
     ],
   },
-  */
+
   {
     title:
       "Co-Designing Programmable Fidgeting Experience with Swarm Robots for Adults with ADHD",
