@@ -2,7 +2,7 @@ export const publications = [
   {
     title:
       "DiminishAR: Diminishing Visual Distractions via Holographic AR Displays",
-    abstract:"Full Details to be Released.",
+    abstract:"Full details to be released.",
     authors: "JangHyeon Lee, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
@@ -15,7 +15,7 @@ export const publications = [
   {
     title:
       "Co-Design and Evaluation of Visual Interventions for Head Posture Correction in Virtual Reality Games",
-    abstract:"Full Details to be Released.",
+    abstract:"Full details to be released.",
     authors: "Minh Duc Dang, Duy Phuoc Luong, Christopher Napier, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
@@ -28,7 +28,7 @@ export const publications = [
   {
     title:
       "User-Defined Co-Speech Gesture Design with Swarm Robots",
-    abstract:"Full Details to be Released.",
+    abstract:"Full details to be released.",
     authors: "Minh Duc Dang, Samira Pulatova, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
