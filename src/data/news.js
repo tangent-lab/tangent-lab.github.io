@@ -11,6 +11,39 @@ export const news = [
   },
   */
   {
+    title: "One Best Paper Honorable Mention award for CHI 2025",
+    date: "Mar, 2025",
+    description: "Duc and Samira received a Best Paper Honorable Mention award for their CHI 2025 paper: “User-Defined Co-Speech Gesture Design with Swarm Robots”. Congratulations! ",
+    url: "",
+    image:"/assets/images/publications/SwarmCoSpeechGesture.gif",
+    tag:"News",
+    article:
+    `
+    We are pleased to share that Duc and Samira have received a Best Paper Honorable Mention Award at the upcoming ACM CHI Conference on Human Factors in Computing Systems (CHI 2025).
+
+    Their paper, titled “User-Defined Co-Speech Gesture Design with Swarm Robots”, was recognized for its contribution to advancing user-centered design in human-robot interaction.
+
+    Congratulations to the authors on this well-deserved recognition!
+    See you at CHI 2025 this April in Japan. 🇯🇵✈️
+  `
+  },
+
+  {
+    title: "Tim’s MSc Thesis Defense",
+    date: "Mar, 2025",
+    description: "Congratulations to Tim on successfully defending his MSc thesis! His MSc thesis is titled, “Towards Human-Centered, Open, and Social Interfaces for AI”.",
+    url: "",
+    image:"/assets/images/news/IMG_8992 Large.jpeg",
+    tag:"News",
+    article:
+    `
+    Big congratulations to Tim for successfully defending his Master's thesis! 🥳👏
+    His thesis, titled “Towards Human-Centered, Open, and Social Interfaces for AI”, explores new directions for more user-friendely and transparent AI interaction. We’re so proud of this milestone—well done, Tim! 🎉📘
+
+  `
+  },
+
+  {
     title: "Three Papers Conditionally Accepted to CHI 2025",
     date: "Jan, 2025",
     description: "We are thrilled to announce that three of our lab's research papers have been conditionally accepted to CHI 2025. Congratulations to JangHyeon, Duc, Samira, Lawrence and all the authors for their incredible contributions! ",
