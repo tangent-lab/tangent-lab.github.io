@@ -10,8 +10,47 @@ export const news = [
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
   */
+
   {
-    title: "One Best Paper Honorable Mention award for CHI 2025",
+    title: "Qihan and Sarah Recognized at the 2025 SFU CS Diversity Awards",
+    date: "April, 2025",
+    description: "Qihan won the 2025 CS Diversity Award for his project on “Intelligent Guiding Robot System for Blind and Visually Impaired People Enabling Independent Navigation”",
+    url: "",
+    image:"/assets/images/news/2025.04-CS Diversity Award 2.png",
+    tag:"News",
+    article:
+    `
+    We are proud to share that two projects from Tangent Lab were recognized at the 2025 CS Diversity Awards, celebrating initiatives that advance diversity, inclusion, equity, and justice in computing science.
+
+
+    
+    <div class="text-xl font-medium"> 🥇 Joint Winner: Intelligent Guiding Robot System for Blind and Visually Impaired People Enabling Independent Navigation </div> 
+    Team Members: Qihan Gao, Shaojun Cai, Kwek Bin Chong
+    Advisors: Lawrence Kim, David Hsu
+
+    <div class="flex place-content-center">
+        <img src="/assets/images/news/2025.04-CS Diversity Award 4.png"  class="rounded-lg" alt="Diversity Award Qihan">
+    </div>
+    This project developed an intelligent navigation assistant system for robotic guide platforms, integrating a voice interface, reasoning backbone for planning and decision-making, and modular functions such as object detection, text reading, and environmental description. Deployed on a quadruped robot, the system enables users to navigate complex public environments with greater autonomy. Field tests demonstrate its potential to support blind users in performing everyday tasks more independently. This work exemplifies how advanced AI and robotics can be developed to support inclusive design, ensuring that emerging technologies are accessible and empowering for everyone.
+
+
+    <div class="text-xl font-medium"> 🎉 Finalist: Facilitating Bids for Conversation Entry using ConvoBuddy, A Chatbot Conversation Assistant  </div>     
+    Team Members: Sarah Jade Pratt, Kenny Zhang
+    Advisor: Xing-Dong Yang
+
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/2025.04-CS Diversity Award 3.png" class="rounded-lg" alt="Diversity Award Sarah">
+    </div>
+    Facilitating smooth entry into ongoing conversations is essential for fostering inclusive and enjoyable social interactions, yet it remains one of the most challenging aspects of conversational dynamics. This project presents ConvoBuddy, a novel conversational assistant designed to support users actively seeking to join existing conversational groups based upon a preliminary need-finding user study and literature review.
+
+
+    Congratulations to both teams for their outstanding contributions to promoting inclusivity in computing science!
+    📎 Learn more about the award and other recognized projects here: <a href="https://www.sfu.ca/fas/computing/about/diversity-cs/csdc-diversity-project-presentations/2025-diversity-project-presentations.html" class="text-blue-700" >2025 Diversity Project Presentations – SFU School of Computing Science</a>
+    `
+  },
+
+  {
+    title: "One Best Paper Honorable Mention Award for CHI 2025",
     date: "Mar, 2025",
     description: "Duc and Samira received a Best Paper Honorable Mention award for their CHI 2025 paper: “User-Defined Co-Speech Gesture Design with Swarm Robots”. Congratulations! ",
     url: "",
