@@ -138,6 +138,12 @@ export const people = [
       title: "BSc, 2024",
       alumni: true,
       url: "",
+      links:[
+        {
+          title:"Now Developer at X10 Technologies",
+          url: "https://x10technologies.com/",
+        }
+      ]
     },
     {
       image: "/assets/images/people/keeyan.jpeg",
