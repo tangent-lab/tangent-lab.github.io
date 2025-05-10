@@ -10,11 +10,74 @@ export const news = [
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
   */
+  {
+    title: "Two Posters Accepted at GI 2025",
+    date: "May, 2025",
+    description: "Congratulations to Qihan and Xueying for having their posters accepted to Graphics Interface 2025. We're excited to see you in Kelowna this May!",
+    tag: "Conference",
+    url: "",
+    image: "/assets/images/news/GI2025.png",
+    article: `
+      We’re excited to share that two posters from Tangent Lab have been accepted to <a href="https://graphicsinterface.org/conference/2025/" target="_blank" rel="noopener noreferrer">Graphics Interface 2025</a> in Kelowna, British Columbia, Canada 🇨🇦!
 
+      🦾 <strong>“Guide Me Through that Door!“: Teach Guiding Robot to Go Through a Door with Reinforcement Learning</strong> — by Qihan Gao and Lawrence Kim
+      🌀 <strong>Designing Swarm Robot Interactions for Everyday Anxiety Regulation</strong> — by Xueying Zhang and Lawrence Kim
+
+      Congratulations to Qihan and Xueying on these exciting contributions! We’re proud to showcase our ongoing work in HCI and interactive robotics at GI’25. 👏
+    `
+  },
+
+  {
+  title: "Duc and JangHyeon Presented at CHI 2025",
+  date: "April, 2025",
+  description: "Duc and JangHyeon presented three papers at CHI 2025 in Yokohama, Japan. You can now watch their talks and read the full papers on our Publications page!",
+  tag: "Conference",
+  image: "/assets/images/news/CHI25.4.jpg",
+  url: "",
+  article: `
+    Our lab is thrilled to be part of <a href="https://chi2025.acm.org/" target="_blank" rel="noopener noreferrer">CHI 2025</a> held in Yokohama, Japan 🇯🇵! This week, Duc and JangHyeon presented three papers accepted:
+    
+    
+    <div class="text-lg font-medium"> 🏅 Honorable Mention Award: User-Defined Co-Speech Gesture Design with Swarm Robots</div> 
+    Minh Duc Dang, Samira Pulatova, and Lawrence Kim
+
+    Non-verbal signals, including co-speech gestures, play a vital role in human communication by conveying nuanced meanings beyond verbal discourse. While researchers have explored co-speech gestures in human-like conversational agents, limited attention has been given to non-humanoid alternatives. In this paper, we propose using swarm robotic systems as conversational agents and introduce a foundational set of swarm-based co-speech gestures, elicited from non-technical users and validated through an online study. This work outlines the key software and hardware requirements to advance research in co-speech gesture generation with swarm robots, contributing to the future development of social robotics and conversational agents.
+
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/CHI25.1.jpg" class="rounded-lg" alt="CHI25.1">
+    </div>
+
+    <div class="text-lg font-medium"> 🪄 DiminishAR: Diminishing Visual Distractions via Holographic AR Displays  </div> 
+    JangHyeon Lee and Lawrence Kim
+    
+    Smartphones are integral to modern life, yet research highlights the cognitive drawbacks associated with their mere presence. While physically removing them can mitigate these effects, it is often inconvenient and may heighten anxiety due to prolonged separation. To address this, we use holographic augmented reality (AR) displays to visually diminish distractions with two interventions: 1) Visual Camouflage, which disguises the smartphone with a hologram that matches its size and blends with the background, making it less noticeable, and 2) Visual Substitution, which occludes the smartphone with a contextually relevant hologram, like books on a desk. In a study with 60 participants, we compared cognitive performance with the smartphone nearby, remote, and visually diminished by our AR interventions. Our findings show that the interventions significantly reduce cognitive impairment, with effects comparable to physically removing the smartphone. The adaptability of our approach opens new avenues to manage visual distractions in daily life.
+
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/CHI25.3.jpg" class="rounded-lg" alt="CHI25.3">
+    </div>
+    
+    <div class="text-lg font-medium"> 🆙 Co-Design & Evaluation of Visual Interventions for Head Posture Correction in Virtual Reality Games </div> 
+    Minh Duc Dang, Duy Phuoc Luong, Christopher Napier, and Lawrence Kim 
+
+    While virtual reality (VR) games offer immersive experiences, prolonged improper head posture during VR gaming sessions can cause neck discomfort and injuries. To address this issue, we prototyped a framework to detect instances of improper head posture and apply various visual interventions to correct them. After assessing the prototype's usability in a co-design workshop with participants experienced in VR design and kinesiology, we refined the interventions in two main directions --- using explicit visual indicators or employing implicit background changes. The refined interventions were subsequently tested in a controlled experiment involving a target selection task. The study results demonstrate that the interventions effectively helped participants maintain better head posture during VR gameplay compared to the control condition.
+
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/CHI25.2.jpg" class="rounded-lg" alt="CHI25.2">
+    </div>
+    
+    Huge congratulations to everyone involved, and thank you Duc and JangHyeon for proudly representing Tangent Lab on CHI! 👏👏 Please learn more about the papers and presentations at <a href="https://tangent.cs.sfu.ca/#publications" class="text-blue-700" > our publication page</a>.
+    
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/CHI25.5.jpg" class="rounded-lg" alt="CHI25.5">
+    </div>
+  `
+  },
+
+  
   {
     title: "Qihan and Sarah Recognized at the 2025 SFU CS Diversity Awards",
     date: "April, 2025",
-    description: "Qihan won the 2025 CS Diversity Award for his project on “Intelligent Guiding Robot System for Blind and Visually Impaired People Enabling Independent Navigation”",
+    description: "Qihan won the 2025 CS Diversity Award for his project on “Intelligent Guiding Robot System for Blind and Visually Impaired People Enabling Independent Navigation”.",
     url: "",
     image:"/assets/images/news/2025.04-CS Diversity Award 2.png",
     tag:"News",
