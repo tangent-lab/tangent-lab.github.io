@@ -1,41 +1,66 @@
 export const publications = [
   {
     title:
-      "DiminishAR: Diminishing Visual Distractions via Holographic AR Displays",
-    abstract:"Full details to be released.",
-    authors: "JangHyeon Lee, Lawrence Kim",
+      "User-Defined Co-Speech Gesture Design with Swarm Robots",
+    abstract:"Non-verbal signals, including co-speech gestures, play a vital role in human communication by conveying nuanced meanings beyond verbal discourse. While researchers have explored co-speech gestures in human-like conversational agents, limited attention has been given to non-humanoid alternatives. In this paper, we propose using swarm robotic systems as conversational agents and introduce a foundational set of swarm-based co-speech gestures, elicited from non-technical users and validated through an online study. This work outlines the key software and hardware requirements to advance research in co-speech gesture generation with swarm robots, contributing to the future development of social robotics and conversational agents.",
+    authors: "Minh Duc Dang, Samira Pulatova, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
     year: 2025,
-    tags: ["accepted"],
+    award: 'Best Paper Honorable Mention',
+    tags: ["mention"],
+    image:"/assets/images/publications/SwarmCoSpeechGesture.gif",
+    links: [
+      {
+        title: "Presentation",
+        url: "https://www.youtube.com/watch?v=GJTpikB5i18",
+      },
+      {
+        title: "PDF",
+        url: "https://www.lhkim.com/Projects/2025-SwarmCoSpeech/Swarm%20Co-Speech%20Gesture%20preprint.pdf",
+      },
+    ],
+  },
+  {
+    title:
+      "DiminishAR: Diminishing Visual Distractions via Holographic AR Displays",
+    abstract:"Smartphones are integral to modern life, yet research highlights the cognitive drawbacks associated with their mere presence. While physically removing them can mitigate these effects, it is often inconvenient and may heighten anxiety due to prolonged separation. To address this, we use holographic augmented reality (AR) displays to visually diminish distractions with two interventions: 1) Visual Camouflage, which disguises the smartphone with a hologram that matches its size and blends with the background, making it less noticeable, and 2) Visual Substitution, which occludes the smartphone with a contextually relevant hologram, like books on a desk. In a study with 60 participants, we compared cognitive performance with the smartphone nearby, remote, and visually diminished by our AR interventions. Our findings show that the interventions significantly reduce cognitive impairment, with effects comparable to physically removing the smartphone. The adaptability of our approach opens new avenues to manage visual distractions in daily life.",
+    authors: "JangHyeon Lee, Lawrence Kim",
+    institutions: "University of Minnesota, Simon Fraser University",
+    venue: "CHI 2025",
+    year: 2025,
+    tags: [],
     image:"/assets/images/publications/DiminishAR.gif",
     links: [
+      {
+        title: "Presentation",
+        url: "https://www.youtube.com/watch?v=Xij76qyG7G0",
+      },
+      {
+        title: "PDF",
+        url: "https://www.lhkim.com/Projects/2025-DiminishAR/DiminishAR%20preprint.pdf",
+      },
     ],
   },
   {
     title:
       "Co-Design and Evaluation of Visual Interventions for Head Posture Correction in Virtual Reality Games",
-    abstract:"Full details to be released.",
+    abstract:"While virtual reality (VR) games offer immersive experiences, prolonged improper head posture during VR gaming sessions can cause neck discomfort and injuries. To address this issue, we prototyped a framework to detect instances of improper head posture and apply various visual interventions to correct them. After assessing the prototype's usability in a co-design workshop with participants experienced in VR design and kinesiology, we refined the interventions in two main directions --- using explicit visual indicators or employing implicit background changes. The refined interventions were subsequently tested in a controlled experiment involving a target selection task. The study results demonstrate that the interventions effectively helped participants maintain better head posture during VR gameplay compared to the control condition.",
     authors: "Minh Duc Dang, Duy Phuoc Luong, Christopher Napier, Lawrence Kim",
     institutions: "Simon Fraser University",
     venue: "CHI 2025",
     year: 2025,
-    tags: ["accepted"],
+    tags: [],
     image:"/assets/images/publications/VR Posture.png",
     links: [
-    ],
-  },
-  {
-    title:
-      "User-Defined Co-Speech Gesture Design with Swarm Robots",
-    abstract:"Full details to be released.",
-    authors: "Minh Duc Dang, Samira Pulatova, Lawrence Kim",
-    institutions: "Simon Fraser University",
-    venue: "CHI 2025",
-    year: 2025,
-    tags: ["accepted"],
-    image:"/assets/images/publications/SwarmCoSpeechGesture.gif",
-    links: [
+      {
+        title: "Presentation",
+        url: "https://www.youtube.com/watch?v=6I8bRydiFMY",
+      },
+      {
+        title: "PDF",
+        url: "https://www.lhkim.com/Projects/2025-VRPosture/VR%20Posture%20preprint.pdf",
+      },
     ],
   },
 
