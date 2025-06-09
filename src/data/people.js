@@ -71,12 +71,7 @@ export const people = [
         },
       ],
     },
-    {
-      image: "/assets/images/people/Tim.png",
-      name: "Tim Baek",
-      title: "Thesis MSc Student",
-      url: "",
-    },
+    
     {
       image: "/assets/images/people/Gary.png",
       name: "Gary(Huayu) Wang",
@@ -106,6 +101,19 @@ export const people = [
       ],
     },
   
+    {
+      image: "/assets/images/people/Tim.png",
+      name: "Tim Baek",
+      title: "Thesis MSc Student, 2024",
+      alumni: true,
+      url: "https://jryng.com/",
+      links:[
+        {
+          title:"Now Leading Open WebUI",
+          url: "https://openwebui.com/",
+        }
+      ]
+    },
     {
       image: "/assets/images/people/janghyeon.jpeg",
       name: "Janghyeon Lee",
@@ -153,18 +161,36 @@ export const people = [
       url: "https://www.linkedin.com/in/keeyan-kazemi/",
       links:[
         {
-          title:"Now Associate Developer Associate Developer at Bit Complete",
+          title:"Now Associate Developer at Bit Complete",
           url:"https://www.linkedin.com/in/keeyan-kazemi/",
         }
       ]
     },
     {
       image: "/assets/images/user.png",
-      name: "Duy Phuoc (Peter) Lee",
+      name: "Duy Phuoc (Peter) Luong",
       title: "BSc",
       alumni: true,
       url: "",
     },
+
+    {
+      image: "/assets/images/user.png",
+      name: "Shun-Hsun (Hannibal) Liang",
+      title: "MS student from National Taiwan University",
+      visitor: true,
+      url: "",
+    },
+
+    {
+      image: "/assets/images/user.png",
+      name: "Suyeon Shin",
+      title: "BS student from DGIST",
+      visitor: true,
+      url: "",
+    },
+
+
     /*
     {
       image: "/assets/images/100.png",
