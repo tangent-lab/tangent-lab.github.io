@@ -11,6 +11,22 @@ export const news = [
   },
   */
   {
+    title: "Xueying Awarded GROWW Scholarship",
+    date: "May, 2025",
+    description: "We are proud to announce that Xueying has been selected as a recipient of the 2025 GROWW Scholarship. This competitive program strives to positively impact the lives of all people who identify as women and to inspire individuals who are dedicated to propelling women’s health.",
+    tag: "News",
+    url: "",
+    image: "/assets/images/news/GROWW.png",
+    article: `
+    We are proud to announce that Xueying has been selected as a recipient of the 2025 GROWW Scholarship. This competitive program strives to positively impact the lives of all people who identify as women and to inspire individuals who are dedicated to propelling women’s health. 
+    
+    The cohort program annually accepts a group of 20 clinical trainees, graduate students, post-doctoral fellows, and ECRs from across Canada chosen through a competitive application process. They will provide Xueying with valuable mentorship, interdisciplinary collaboration opportunities, and research support as she continues developing inclusive and human-centered interaction systems for women’s health. Congratulations, Xueying, on this exciting achievement! 🌟
+
+    The GROWW (Guiding interdisciplinary Research On Women’s and girls’ health and Wellbeing) program is a Health Research Training Platform (HRTP) supported by the CIHR Institute of Gender and Health, Indigenous People’s Health and Human Development, Child and Youth Health. Learn more about the program <a href="https://www.growwprogram.com/" class="text-blue-700" > here</a>.
+    `
+  },
+
+  {
     title: "Two Posters Accepted at GI 2025",
     date: "May, 2025",
     description: "Congratulations to Qihan and Xueying for having their posters accepted to Graphics Interface 2025. We're excited to see you in Kelowna this May!",
@@ -23,7 +39,7 @@ export const news = [
       🦾 <strong>“Guide Me Through that Door!“: Teach Guiding Robot to Go Through a Door with Reinforcement Learning</strong> — by Qihan Gao and Lawrence Kim
       🌀 <strong>Designing Swarm Robot Interactions for Everyday Anxiety Regulation</strong> — by Xueying Zhang and Lawrence Kim
 
-      Congratulations to Qihan and Xueying on these exciting contributions! We’re proud to showcase our ongoing work in HCI and interactive robotics at GI’25. 👏
+      Congratulations to Qihan and Xueying on these exciting contributions! We’re proud to showcase our ongoing work in HCI at GI’25. 👏
     `
   },
 

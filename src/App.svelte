@@ -227,10 +227,12 @@
       <div class="flex justify-between items-center my-6">
         <div class="flex items-center">
           <div>
-            <span class="font-secondary text-xl font-bold text-gray-800">Current Members</span>
+            <span class="text-xl font-semibold text-gray-800">Current Members</span>
+            <!--
             <p class="text-sm text-gray-800">
               Meet the brilliant minds driving Tangent Lab's groundbreaking projects
             </p>
+            -->
           </div>
         </div>
       </div>
