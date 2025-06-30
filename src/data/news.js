@@ -10,6 +10,17 @@ export const news = [
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
   */
+
+  {
+    title: "Xueying and Qihan Presented Posters at NWRS",
+    date: "Jun, 2025",
+    description: "Xueying and Qihan presented their research at the 2025 Pacific Northwest Robotics Symposium (NWRS). The event showcased cutting-edge research spanning topics such as multi-robot coverage path planning, assistive robotics for aging populations, expressive speech in robots, safe learning algorithms, human-robot object handover, and the ethical and social dimensions of robotics.",
+    tag: "News",
+    url: "https://www.sfu.ca/fas/computing/news-events/news/2025/june/sfu-hosts-2025-pacific-northwest-symposium/",
+    image: "/assets/images/news/2025-pacific-northwest-symposium.png",
+    article: "",
+  },
+
   {
     title: "Xueying Awarded GROWW Scholarship",
     date: "May, 2025",
@@ -45,7 +56,7 @@ export const news = [
 
   {
   title: "Duc and JangHyeon Presented at CHI 2025",
-  date: "April, 2025",
+  date: "Apr, 2025",
   description: "Duc and JangHyeon presented three papers at CHI 2025 in Yokohama, Japan. You can now watch their talks and read the full papers on our Publications page!",
   tag: "Conference",
   image: "/assets/images/news/CHI25.4.jpg",
@@ -92,7 +103,7 @@ export const news = [
   
   {
     title: "Qihan and Sarah Recognized at the 2025 SFU CS Diversity Awards",
-    date: "April, 2025",
+    date: "Apr, 2025",
     description: "Qihan won the 2025 CS Diversity Award for his project on “Intelligent Guiding Robot System for Blind and Visually Impaired People Enabling Independent Navigation”.",
     url: "",
     image:"/assets/images/news/2025.04-CS Diversity Award 2.png",

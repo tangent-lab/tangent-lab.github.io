@@ -1,6 +1,6 @@
 export const people = [
     {
-      image: "/assets/images/people/Lawrence.png",
+      image: "/assets/images/people/Lawrence 2.jpg",
       name: "Prof. Lawrence Kim",
       title: "Assistant Professor",
       url:"https://www.lhkim.com/",
@@ -20,7 +20,7 @@ export const people = [
       ],
     },
     {
-      image: "/assets/images/people/Xueying.png",
+      image: "/assets/images/people/Xueying 2.JPG",
       name: "Xueying Zhang",
       title: "PhD Student",
       url: "https://zhangxueying720.wixsite.com/xueying",
@@ -35,32 +35,10 @@ export const people = [
         },
       ],
     },
+
+
     {
-      image: "/assets/images/people/Duc.png",
-      name: "Duc Dang",
-      title: "Thesis MSc Student",
-      url: "https://www.linkedin.com/in/dmdang/",
-      links:[
-        {
-          title:"LinkedIn",
-          url:"https://www.linkedin.com/in/dmdang/",
-        },
-      ]
-    },
-    {
-      image: "/assets/images/people/Sarah.png",
-      name: "Sarah Pratt",
-      title: "Thesis MSc Student",
-      url: "",
-      links:[
-        {
-          title:"Email",
-          url:"mailto:sarah_pratt_2@sfu.ca",
-        },
-      ]
-    },
-    {
-      image: "/assets/images/people/Qihan.png",
+      image: "/assets/images/people/Qihan 2.JPG",
       name: "Qihan Gao",
       title: "Thesis MSc Student",
       url: "",
@@ -73,19 +51,37 @@ export const people = [
     },
     
     {
-      image: "/assets/images/people/Gary.png",
-      name: "Gary(Huayu) Wang",
-      title: "Professional MSc Student",
-      url: "https://www.linkedin.com/in/gary-why/",
+      image: "/assets/images/people/Sarah 2.JPG",
+      name: "Sarah Pratt",
+      title: "Thesis MSc Student",
+      url: "",
+      links:[
+        {
+          title:"Email",
+          url:"mailto:sarah_pratt_2@sfu.ca",
+        },
+      ]
+    },
+
+    {
+      image: "/assets/images/people/Duc.png",
+      name: "Duc Dang",
+      title: "Thesis MSc Student",
+      url: "https://www.linkedin.com/in/dmdang/",
       links:[
         {
           title:"LinkedIn",
-          url: "https://www.linkedin.com/in/gary-why/",
-        }
+          url:"https://www.linkedin.com/in/dmdang/",
+        },
       ]
     },
+
+    
+
+    
+    
     {
-      image: "/assets/images/people/Ayana.png",
+      image: "/assets/images/people/Ayana 2.JPG",
       name: "Ayana Hussain",
       title: "Undergraduate Student",
       url: "https://www.linkedin.com/in/ayana-hussain",
@@ -100,6 +96,74 @@ export const people = [
         },
       ],
     },
+
+
+
+    {
+      image: "/assets/images/people/Alex 2.JPG",
+      name: "Alex Noh",
+      title: "Undergraduate Student",
+      url: "https://www.linkedin.com/in/alex-noh-0739a2159/",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/alex-noh-0739a2159/",
+        },
+      ]
+    },
+
+    {
+      image: "/assets/images/people/Vidhi 2.JPG",
+      name: "Vidhi Aggarwal",
+      title: "Undergraduate Student",
+      url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
+      links: [
+        {
+          title: "Email",
+          url: "mailto:vaa17@sfu.ca",
+        },
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
+        },
+      ]
+    },
+
+    {
+      image: "/assets/images/people/Yousef 2.JPG",
+      name: "Yousef Haiba",
+      title: "Undergraduate Student",
+      url: "https://yousefhaiba18.github.io/Portfolio/",
+      links: [
+        {
+          title: "Website",
+          url: "https://yousefhaiba18.github.io/Portfolio/",
+        },
+        {
+          title: "Email",
+          url: "mailto:yousefhaiba1@gmail.com",
+        },
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/yousef-haiba-333898233/",
+        },
+      ],
+    },
+    
+    
+    {
+      image: "/assets/images/people/Gary.png",
+      name: "Gary(Huayu) Wang",
+      title: "Professional MSc Student",
+      url: "https://www.linkedin.com/in/gary-why/",
+      links:[
+        {
+          title:"LinkedIn",
+          url: "https://www.linkedin.com/in/gary-why/",
+        }
+      ]
+    },
+
   
     {
       image: "/assets/images/people/Tim.png",
