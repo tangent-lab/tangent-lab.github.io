@@ -32,7 +32,7 @@
 
     <div class="hidden md:flex">
       <img
-        src="/assets/images/people/GroupPhoto.png"
+        src="/assets/images/people/Group.png"
         alt="Group Photo"
         class="rounded-lg max-h-[26rem] w-full h-full object-cover"
       />

@@ -15,7 +15,7 @@
     />
 
     <div
-      class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-t from-gray-800 to-transparent text-white text-xs font-medium bottom-0 p-1"
+      class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-t from-gray-800 via-transparent to-transparent text-white text-xs font-medium bottom-0 p-1"
     ></div>
 
     <div class=" absolute bottom-0 text-white p-4">
