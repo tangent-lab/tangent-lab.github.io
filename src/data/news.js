@@ -10,6 +10,20 @@ export const news = [
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
   */
+  {
+    title: "Sarah and Alex Selected for UIST 2025 Student Innovation Contest",
+    date: "Aug, 2025",
+    description: "We are delighted to announce that Sarah and Alex have been selected as finalists for the 2025 UIST Student Innovation Contest (SIC). They will present their innovations in Busan, Korea.",
+    tag: "News",
+    image: "/assets/images/news/UIST2025.png",
+    article:`
+    We are delighted to announce that Sarah and Alex have been selected as finalists for the 2025 UIST Student Innovation Contest (SIC). The SIC competition this year is themed “The Future of Feeling: Exploring the Frontiers of Multi‑Modal Haptics”. As part of the contest, finalist teams will present their innovations at the UIST 2025 conference in Busan, Korea (Sept 28 – Oct 1). 
+   
+    Sarah and Alex’s project was selected through a competitive juried process, placing them among the top student innovators in interactive and haptic-driven systems. Learn more about their project <a href="https://programs.sigchi.org/uist/2025/program/content/208784" class="text-blue-700" > here</a>.
+
+    We extend warm congratulations to Sarah and Alex on this honor! We eagerly look forward to their presentation at UIST and to witnessing how their work contributes to the future of immersive, multi‑modal interaction.
+    `
+  },
 
   {
     title: "Xueying and Qihan Presented Posters at NWRS",
