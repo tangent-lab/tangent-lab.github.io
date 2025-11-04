@@ -1,9 +1,10 @@
 <script lang="ts">
   let { people, showAlumni = true } = $props();
 
-  const currentStudents = people.filter(person => !person.alumni && !person.visitor);
+  const currentStudents = people.filter(person => !person.alumni && !person.visitor && !person.collaborator);
   const alumniStudents = people.filter(person => person.alumni);
   const visitors = people.filter(person => person.visitor);
+  const collaborators = people.filter(person => person.collaborator);
 </script>
 
 {#snippet personBlock(person)}
@@ -57,6 +58,25 @@
   <!-- Alumni Section -->
   {#if showAlumni}
 
+    <div class="flex justify-between items-center mt-16 mb-6">
+      <div class="flex items-center">
+          <span class="text-xl font-semibold text-gray-800">Collaborators</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {#each collaborators as person}
+        {#if person?.url}
+          <a href={person.url} target="_blank" class="cursor-pointer">
+            {@render personBlock(person)}
+          </a>
+        {:else}
+          {@render personBlock(person)}
+        {/if}
+      {/each}
+    </div>
+    
+  
     <div class="flex justify-between items-center mt-16 mb-6">
       <div class="flex items-center">
           <span class="text-xl font-semibold text-gray-800">Visitors</span>

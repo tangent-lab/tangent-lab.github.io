@@ -9,7 +9,30 @@ export const news = [
     tag:"Position",
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
+
   */
+
+
+
+  /*
+  {
+    title: "New lab members join Tangent Lab this Fall",
+    date: "Sep, 2025",
+    description: "We’re excited to welcome a new cohort of researchers to Tangent Lab this Fall! Anjun Zhu joins us as a new PhD student, bringing fresh ideas and energy to our growing graduate research community.",
+    tag: "News",
+    image: "/assets/images/people/Group.png",
+    article:`
+    We’re excited to welcome a new cohort of researchers to Tangent Lab this Fall! 🍁
+
+    Anjun Zhu joins us as a new PhD student, bringing fresh ideas and energy to our growing graduate research community.
+
+    We’re also thrilled to have seven talented undergraduate students joining the lab: Saarang Anand, Felicia Jiang, Audrey Safikhani, Sajan Senghera, Yaaska K. Pandit, James Chuong, and Micah Baker. They will contribute to research projects and collaborate with graduate students.
+
+    Welcome to all our new members. We’re so glad to have you with us! 👋
+    `
+  },
+  */
+  
   {
     title: "Sarah and Alex Selected for UIST 2025 Student Innovation Contest",
     date: "Aug, 2025",
@@ -65,6 +88,22 @@ export const news = [
       🌀 <strong>Designing Swarm Robot Interactions for Everyday Anxiety Regulation</strong> — by Xueying Zhang and Lawrence Kim
 
       Congratulations to Qihan and Xueying on these exciting contributions! We’re proud to showcase our ongoing work in HCI at GI’25. 👏
+    `
+  },
+
+
+  {
+    title: "New lab members join this Summer",
+    date: "May, 2025",
+    description: "This summer, we’re excited to welcome three new undergraduate researchers to Tangent Lab! Vidhi Aggarwal, Yousef Haiba, and Alex Noh have joined the lab and are contributing to ongoing projects in human-computer interaction.",
+    tag: "News",
+    image: "/assets/images/people/25summer/Group.png",
+    article:`
+    This summer, we’re excited to welcome three new undergraduate researchers to Tangent Lab! 🌞
+
+    Vidhi Aggarwal, Yousef Haiba, and Alex Noh have joined the lab and are contributing to ongoing projects in human-computer interaction.
+
+    We’re excited to see what this group brings to the lab. Welcome, Vidhi, Yousef, and Alex! 👋
     `
   },
 
@@ -241,6 +280,25 @@ export const news = [
     tag:"News",
     article:"",
   },
+
+  {
+    title: "New Graduate Students Join Tangent Lab",
+    date: "May, 2025",
+    description: "We’re excited to welcome a new group of graduate students to Tangent Lab this Fall! Xueying Zhang joins us as a new PhD student with a research focus on tangible user interfaces and inclusive design.",
+    tag: "News",
+    image: "/assets/images/people/24fall/GroupPhoto.png",
+    article:`
+    We’re excited to welcome a new group of graduate students to Tangent Lab this Fall! 🍂
+
+    Xueying Zhang joins us as a new PhD student with a research focus on tangible user interfaces and inclusive design.
+
+    We’re also pleased to welcome two Master’s students, Qihan Gao and Sarah Pratt, who are already contributing to projects in robotics and socially meaningful technologies.
+
+    We’re thrilled to have you all on board and look forward to the research, creativity, and perspective you bring to the lab! 🎉
+    `
+  },
+
+
   {
     title: "Tian and Tim Presented at CHI 2024",
     date: "May, 2024",
