@@ -1,7 +1,7 @@
 export const people = [
     {
       image: "/assets/images/people/_Lawrence 2.JPG",
-      name: "Dr. Lawrence Kim",
+      name: "Lawrence Kim",
       title: "Assistant Professor",
       url:"https://www.lhkim.com/",
       links: [
@@ -24,11 +24,11 @@ export const people = [
       image: "/assets/images/people/_Xueying2 2.JPG",
       name: "Xueying Zhang",
       title: "PhD Student",
-      url: "https://zhangxueying720.wixsite.com/xueying",
+      url: "https://xueying720.github.io/",
       links: [
         {
           title: "Website",
-          url: "https://zhangxueying720.wixsite.com/xueying",
+          url: "https://xueying720.github.io/",
         },
         {
           title: "Email",
@@ -232,10 +232,39 @@ export const people = [
       url: "",
     },
 
+    
+    /* collaborators */
+    {
+      image: "/assets/images/people/collaborator/Chris Napier.png",
+      name: "Dr. Chris Napier",
+      title: "Department of Biomedical Physiology and Kinesiology, SFU",
+      collaborator: true,
+      url: "https://www.sfu.ca/bpk/about/people/faculty/ChrisNapier0.html",
+    },
+
+    {
+      image: "/assets/images/user.png",
+      name: "Dr. Justin Oh",
+      title: "Department of Surgery, UBC",
+      collaborator: true,
+      url: "https://surgery.med.ubc.ca/justin-oh-ba-md-frcpc/",
+    },
+
+    {
+      image: "/assets/images/people/collaborator/Angelica Lim.png",
+      name: "Dr. Angelica Lim",
+      title: "School of Computing Science, SFU",
+      collaborator: true,
+      url: "https://www.sfu.ca/fas/computing/people/faculty/faculty-members/angelica-lim.html",
+    },
+
+
+    /* alumni */
     {
       image: "/assets/images/people/Yousef 2.JPG",
       name: "Yousef Haiba",
       title: "Undergraduate Student",
+      alumni: true,
       url: "https://yousefhaiba18.github.io/Portfolio/",
       links: [
         {
@@ -258,6 +287,7 @@ export const people = [
       image: "/assets/images/people/Gary.png",
       name: "Gary(Huayu) Wang",
       title: "Professional MSc Student",
+      alumni: true,
       url: "https://www.linkedin.com/in/gary-why/",
       links:[
         {
@@ -267,7 +297,6 @@ export const people = [
       ]
     },
 
-    /* alumni */
     {
       image: "/assets/images/people/Tim.png",
       name: "Tim Baek",
