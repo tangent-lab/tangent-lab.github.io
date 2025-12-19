@@ -20,6 +20,22 @@ export const publications = [
         url: "https://www.lhkim.com/Projects/2025-SwarmCoSpeech/Swarm%20Co-Speech%20Gesture%20preprint.pdf",
       },
     ],
+    bibtex: 
+      `@inproceedings{10.1145/3706598.3714147,
+      author = {Dang, Minh Duc and Pulatova, Samira and Kim, Lawrence H},
+      title = {User-Defined Co-Speech Gesture Design with Swarm Robots},
+      year = {2025},
+      isbn = {9798400713941},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      url = {https://dl.acm.org/doi/10.1145/3706598.3714147},
+      doi = {10.1145/3706598.3714147},
+      booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
+      articleno = {787},
+      numpages = {15},
+      keywords = {Swarm Robotics, Co-speech Gesture, Elicitation Study},
+      series = {CHI '25}
+      }`,
   },
   {
     title:
@@ -576,4 +592,16 @@ export const publications = [
     ],
   },
 
-]
+];
+
+// generate slugs for each publication (format: YYYY-N). If an item already has `slug`, keep it.
+(() => {
+  const counts = {};
+  publications.forEach(item => {
+    if (item.slug) return;
+    const year = (item.year || 'unknown').toString();
+    const key = `${year}`;
+    counts[key] = (counts[key] || 0) + 1;
+    item.slug = `${key}-${counts[key]}`;
+  });
+})();
