@@ -1,4 +1,5 @@
 <script lang="ts">
+  import LazyImage from "$lib/components/LazyImage.svelte";
   let { people, showAlumni = true } = $props();
 
   const currentStudents = people.filter(person => !person.alumni && !person.visitor && !person.collaborator);
@@ -9,10 +10,10 @@
 
 {#snippet personBlock(person)}
   <div class="relative flex flex-col justify-center rounded-lg group cursor-pointer">
-    <img
+    <LazyImage
       src={person.image ?? "/assets/images/user.png"}
       alt={person.name}
-      class="rounded-lg w-full aspect-square object-cover"
+      className="rounded-lg w-full aspect-square object-cover"
     />
 
     <div

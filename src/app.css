@@ -23,3 +23,21 @@ html {
     "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* Lazy image transition: start blurred and transparent, then fade/clear on load */
+.lazy {
+  opacity: 0;
+  filter: blur(8px) saturate(0.95);
+  transition: opacity 360ms ease-out, filter 360ms ease-out;
+}
+
+.lazy.is-loaded {
+  opacity: 1;
+  filter: blur(0) saturate(1);
+}
+
+/* Ensure images don't cause layout shift: make them block-level and responsive */
+img.lazy {
+  display: block;
+  max-width: 100%;
+}

@@ -9,6 +9,7 @@
   import { publications } from './data/publications.js';
   import { news } from './data/news.js';
   import Button from "./lib/components/Button.svelte";
+  import LazyImage from "$lib/components/LazyImage.svelte";
   import PublicationDetail from './lib/components/PublicationDetail.svelte';
   import NewsDetail from './lib/components/NewsDetail.svelte';
 
@@ -17,18 +18,49 @@
   let selectedPublication = null;
   let selectedNews = null;
 
-  currentPage = location.hash.replace("#", "") || "home";
+  const parseHash = () => {
+    const raw = (location.hash.replace("#", "") || "home");
+    const [page, id] = raw.split('/');
+    currentPage = page;
+    selectedNews = null;
+    selectedPublication = null;
 
-  window.addEventListener("hashchange", () => {
-    currentPage = location.hash.replace("#", "") || "home";
-  });
+    if (page === 'newsDetail' && id != null) {
+      selectedNews = news.find(n => n.slug === id) || null;
+    }
 
-  const navigate = (page, news = null, publication = null) => {
-    selectedPublication = publication;
-    selectedNews = news;
+    if (page === 'publicationDetail' && id != null) {
+      selectedPublication = publications.find(p => p.slug === id) || null;
+    }
+  };
+
+  parseHash();
+  window.addEventListener('hashchange', parseHash);
+
+  const navigate = (page, newsParam = null, publicationParam = null) => {
+    selectedPublication = null;
+    selectedNews = null;
     currentPage = page;
     isMenuOpen = false; 
-    history.pushState(null, "", `#${page}`);
+    let hash = `#${page}`;
+
+    if (page === 'newsDetail' && newsParam != null) {
+      let slug = typeof newsParam === 'string' ? newsParam : (newsParam.slug || news.find(n => n === newsParam)?.slug);
+      if (slug) {
+        selectedNews = news.find(n => n.slug === slug) || null;
+        hash = `#${page}/${slug}`;
+      }
+    }
+
+    if (page === 'publicationDetail' && publicationParam != null) {
+      let slug = typeof publicationParam === 'string' ? publicationParam : (publicationParam.slug || publications.find(p => p === publicationParam)?.slug);
+      if (slug) {
+        selectedPublication = publications.find(p => p.slug === slug) || null;
+        hash = `#${page}/${slug}`;
+      }
+    }
+
+    history.pushState(null, "", hash);
     window.scrollTo(0, 0);
   };
 </script>
@@ -175,10 +207,10 @@
 
     {#if currentPage === "home"}
       <div class="relative">
-        <img
+        <LazyImage
           src="/assets/images/sfu.webp"
           alt="Tangent Lab"
-          class="rounded-lg h-96 w-full bg-inherit object-cover"
+          className="rounded-lg h-96 w-full bg-inherit object-cover"
         />
 
         <div
@@ -200,13 +232,13 @@
         <span class="text-2xl font-semibold text-gray-800">Latest News</span>
         <Button on:click={() => navigate("news")}  size="lg" ariaLabel="View All  →" />
       </div>
-      <News {news}  showAll={false} on:selectNews={(e) => navigate("newsDetail", e.detail, null)}  />        
+      <News {news} showAll={false} />        
 
       <div class="flex justify-between items-center  mt-16">
         <span class="text-2xl font-semibold text-gray-800">Selected Projects</span>
         <Button on:click={() => navigate("publications")}  size="lg" ariaLabel="View All  →" />
       </div>
-      <Publications {publications} showList={false} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
+      <Publications {publications} showList={false} />
 
       <div class="flex justify-between items-center  mt-16">
           <span class="text-2xl font-semibold text-gray-800">People</span>
@@ -241,12 +273,12 @@
     {/if}
 
     {#if currentPage === "news"}
-      <News {news} on:selectNews={(e) => navigate("newsDetail", e.detail, null)}  />          
+      <News {news} />          
       <Footer />
     {/if}
 
     {#if currentPage === "publications"}
-      <Publications {publications} on:selectPublication={(e) => navigate("publicationDetail", null, e.detail)} />
+      <Publications {publications} />
       <Footer />
     {/if}
 

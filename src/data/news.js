@@ -9,14 +9,70 @@ export const news = [
     tag:"Position",
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
-
   */
 
-
-
-  /*
   {
-    title: "New lab members join Tangent Lab this Fall",
+    title: "Duc Successfully Defends MSc Thesis",
+    date: "Dec, 2025",
+    description: "Congratulations to Minh Duc Dang on successfully defending his MSc thesis with flying colors!",
+    url: "",
+    image:"/assets/images/news/Duc Defense new.png",
+    tag:"News",
+    article:
+    `
+    Congratulations to Minh Duc Dang on successfully defending his MSc thesis with flying colors! 🎉
+
+    The examining committee was highly impressed by both Duc's oral presentation and the quality of his written thesis, and unanimously approved the thesis as submitted, which is both rare and a strong testament to the rigor and impact of his work. We look forward to celebrating this achievement together in person after the holidays! 🥂🥳
+
+    <strong>Thesis Title</strong>
+    Design and Implementation of Co-speech Gestures with Tabletop Swarm Robots
+
+    <strong>Thesis Summary</strong>
+    Co-speech gestures are a fundamental aspect of non-verbal human communication, conveying meaning, emotion, and intent beyond spoken language. While extensive research has examined co-speech gestures in humanoid conversational agents, little attention has been given to how non-humanoid systems can perform such gestures. Prior research has shown that tabletop swarm robots can provide a flexible, scalable user interface, making them a promising medium for expressing co-speech gestures.
+    This thesis investigates the design and implementation of co-speech gestures in tabletop swarm robots. We begin with an elicitation study that collects and analyzes user-generated designs for swarm-based co-speech gestures, resulting in the creation and validation of a foundational gesture set. Building on these results, we develop a generative framework that combines Large Language Models (LLMs) and image generation models to synchronize text input with expressive swarm formations. This framework enables the end-to-end generation of co-speech gestures directly from natural language. Together, these contributions advance multimodal human–swarm communication and lay the groundwork for future research in social and interactive robotics.
+
+    <strong>Keywords</strong>
+    Human-Computer Interaction, Co-speech Gestures, Swarm Robotics, Swarm User Interface, Generative AI
+
+    <strong>Examining Committee</strong>
+    Dr. Lawrence Kim (Supervisor)
+    Dr. Angelica Lim (Committee Member)
+    Dr. Parmit Chilana (Examiner)
+    Dr. Xing-Dong Yang (Chair)
+    
+    Congratulations again to Duc on this outstanding achievement! 🎉
+  `,
+  },
+
+  {
+    title: "Tangent Lab Holiday Party 2025",
+    date: "Nov, 2025",
+    description: "We wrapped up 2025 with shared snacks, laughter, and festive fun at the Tangent Lab Holiday Party! 🎁🎄",
+    url: "",
+    image:"/assets/images/news/IMG_0772.jpg",
+    tag:"News",
+    article:
+    `
+    We wrapped up 2025 with shared snacks, laughter, and festive fun at the Tangent Lab Holiday Party! 🎁🎄
+
+    After gathering to enjoy a variety of snacks and casual conversations, the lab came together for a lively White Elephant gift exchange, filled with unexpected surprises, friendly gift “steals,” and plenty of holiday cheer.
+
+    It was a relaxed and joyful way to reflect on the year’s achievements and celebrate the strong sense of community within the lab. A perfect close to the year with an incredible team! ✨🥂
+  `
+  },
+
+  {
+    title: "Duc and Ayana Presented at SFU CS Research Day",
+    date: "Oct, 2025",
+    description: "On October 30, 2025, the SFU Computing Science community came together for CS Research Day 2025, a day that showcased the depth, innovation, and real-world impact of computing research at SFU. Duc presented his CHI’25 work, and Ayana presented open webui paper (on ArXiv: https://arxiv.org/abs/2510.02546)]",
+    tag: "News",
+    url: "https://www.sfu.ca/fas/computing/news-events/news/2025/october/celebrating-innovation-and-discovery-at-cs-research-day-2025.html",
+    image: "/assets/images/news/csresearchday.jpg",
+    article: "",
+  },
+  
+  {
+    title: "New Lab Members Join Tangent Lab This Fall",
     date: "Sep, 2025",
     description: "We’re excited to welcome a new cohort of researchers to Tangent Lab this Fall! Anjun Zhu joins us as a new PhD student, bringing fresh ideas and energy to our growing graduate research community.",
     tag: "News",
@@ -31,7 +87,6 @@ export const news = [
     Welcome to all our new members. We’re so glad to have you with us! 👋
     `
   },
-  */
   
   {
     title: "Sarah and Alex Selected for UIST 2025 Student Innovation Contest",
@@ -244,23 +299,6 @@ export const news = [
   `
   },
 
-  /*
-  {
-    title: "Tangent Lab Holiday Party 2024",
-    date: "Dec, 2024",
-    description: "Wrapped up the year with a home-cooked feast, chaotic White Elephant trades, and some intense card games 🎁🎄 Grateful for the amazing Tangent Lab crew—here’s to another year of innovation and fun! 🥂✨",
-    url: "",
-    image:"/assets/images/news/IMG_8506.jpg",
-    tag:"News",
-    article:
-    `
-    Wrapped up 2024 with a feast, laughter, and festive chaos! 🍽️🎁 
-    After a hearty dinner, the lab dove into a White Elephant gift exchange, filled with surprises, steals, and plenty of holiday spirit. 
-    A perfect way to celebrate the end of the year with an amazing team! ✨🥂
-  `
-  },
-  */
-
   {
     title: "Sarah Presented at VINCI Event",
     date: "Dec, 2024",
@@ -283,7 +321,7 @@ export const news = [
 
   {
     title: "New Graduate Students Join Tangent Lab",
-    date: "May, 2025",
+    date: "Sep, 2024",
     description: "We’re excited to welcome a new group of graduate students to Tangent Lab this Fall! Xueying Zhang joins us as a new PhD student with a research focus on tangible user interfaces and inclusive design.",
     tag: "News",
     image: "/assets/images/people/24fall/GroupPhoto.png",
@@ -351,4 +389,27 @@ export const news = [
   `
   },
 ];
+
+// generate slugs for each news item (format: YYYY-MM-N). If an item already has `slug`, keep it.
+(() => {
+  const counts = {};
+  news.forEach(item => {
+    if (item.slug) return;
+    const dateStr = item.date || '';
+    const parts = dateStr.split(',');
+    const monthName = (parts[0] || '').trim();
+    const year = (parts[1] || '').trim();
+    let mm = '00';
+    if (monthName && year) {
+      const d = new Date(`${monthName} 1, ${year}`);
+      if (!isNaN(d.getTime())) {
+        mm = String(d.getMonth() + 1).padStart(2, '0');
+      }
+    }
+    const y = year || 'unknown';
+    const key = `${y}-${mm}`;
+    counts[key] = (counts[key] || 0) + 1;
+    item.slug = `${key}-${counts[key]}`;
+  });
+})();
   

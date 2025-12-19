@@ -1,8 +1,5 @@
 <script lang="ts">
-  import { createEventDispatcher } from 'svelte';
-
-  const dispatch = createEventDispatcher();
-
+  import LazyImage from './LazyImage.svelte';
   let { publications, showList = true } = $props();
 
   const limitedPublications = publications.slice(0, 6);
@@ -136,11 +133,17 @@
           <div class="font-secondary font-bold text-2xl mb-6 ">{year}</div>
 
           {#each getGroupedPublications()[year] as pub}
-            <div class="gap-4 mb-4 flex w-full justify-between items-top">
-              <img
-                  src={pub?.image ?? "/assets/images/news.png"}
+            <div
+              class="gap-4 mb-4 flex w-full justify-between items-top cursor-pointer"
+              role="button"
+              tabindex="0"
+              onclick={(e) => { if ((e.target as HTMLElement).closest('a')) return; location.hash = `#publicationDetail/${pub.slug}`; window.scrollTo(0, 0); }}
+              onkeydown={(e) => { if (e.key === 'Enter' && !(e.target as HTMLElement).closest('a')) { location.hash = `#publicationDetail/${pub.slug}`; window.scrollTo(0, 0); } }}
+            >
+                <LazyImage
+                  src={pub?.image ?? "/assets/images/user.png"}
                   alt={pub.title}
-                  class="rounded-lg w-1/4 aspect-w-4 aspect-h-3 object-cover"
+                  className="rounded-lg w-1/4 aspect-w-4 aspect-h-3 object-cover"
                 />
 
               <div class="w-3/4 px-8 py-6 bg-gray-50 rounded-lg cursor-pointer hover:shadow-md transition-shadow ">
@@ -172,27 +175,16 @@
                 </p>
 
                 <a
-                    href="#"
-                    onclick={() => {
-                      event.preventDefault();
-                      dispatch('selectPublication', pub);
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={`#publicationDetail/${pub.slug}`}
                     class="font-secondary font-medium"
+                    onclick={(e) => { e.preventDefault(); location.hash = `#publicationDetail/${pub.slug}`; window.scrollTo(0, 0); }}
                   >
                   {pub.title}
-                </a>
+                </a> 
                 <div class="text-sm mt-2 mb-4">{pub.authors}</div>
                 <div class="flex gap-2 mt-4">
                   <a
-                      href="#"
-                      onclick={() => {
-                        event.preventDefault();
-                        dispatch('selectPublication', pub);
-                      }}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`#publicationDetail/${pub.slug}`}
                       class="
                         text-xs font-medium p-2 text-xs text-gray-900 bg-white bg-opacity-60
                         items-center          
@@ -202,6 +194,7 @@
                         rounded-md         
                         transition-colors
                         duration-200"
+                      onclick={(e) => { e.preventDefault(); location.hash = `#publicationDetail/${pub.slug}`; window.scrollTo(0, 0); }}
                     >
                       Details
                   </a>
@@ -328,12 +321,16 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {#each limitedPublications as publication}
         <div
-          class="relative flex flex-col justify-center rounded-lg group cursor-pointer" 
+          class="relative flex flex-col justify-center rounded-lg group cursor-pointer"
+          role="button"
+          tabindex="0"
+          onclick={(e) => { if ((e.target as HTMLElement).closest('a')) return; location.hash = `#publicationDetail/${publication.slug}`; window.scrollTo(0, 0); }}
+          onkeydown={(e) => { if (e.key === 'Enter' && !(e.target as HTMLElement).closest('a')) { location.hash = `#publicationDetail/${publication.slug}`; window.scrollTo(0, 0); } }}
         >
-          <img
+          <LazyImage
             src={publication?.image ?? "/assets/images/user.png"}
             alt={publication.title}
-            class="rounded-lg w-full aspect-square object-cover"
+            className="rounded-lg w-full aspect-square object-cover"
           />
 
           <div
@@ -348,16 +345,11 @@
               class=" mt-1 mb-1.5 group-hover:underline font-medium cursor-pointer"
             >
               <a
-                  href=""
-                  onclick={() => {
-                    event.preventDefault();
-                    dispatch('selectPublication', publication);
-                  }}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`#publicationDetail/${publication.slug}`}
+                  onclick={(e) => { e.preventDefault(); location.hash = `#publicationDetail/${publication.slug}`; window.scrollTo(0, 0); }}
                 >
                 {publication.title}
-                </a>
+                </a> 
             </div>
             <div class="text-sm text-gray-400 line-clamp-2">
               {publication.authors}
@@ -365,17 +357,12 @@
 
             <div class="flex gap-1.5 mt-1">
               <a
-                  href="#"
-                  onclick={() => {
-                    event.preventDefault();
-                    dispatch('selectPublication', publication);
-                  }}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`#publicationDetail/${publication.slug}`}
                   class="text-sm text-gray-100 hover:underline"
+                  onclick={(e) => { e.preventDefault(); location.hash = `#publicationDetail/${publication.slug}`; window.scrollTo(0, 0); }}
                 >
                   Details
-              </a>
+              </a> 
               {#each publication.links as link}
                 <a
                   href={link.url}

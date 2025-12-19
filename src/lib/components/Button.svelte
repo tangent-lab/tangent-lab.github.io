@@ -13,7 +13,9 @@
     : size === 'lg'
       ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
     : size === 'xl'
-      ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium bg-white text-gray-900 bg-gray-50'
+      ? 'text-sm pl-4 pr-2 py-3 text-sm font-medium bg-gray-50 text-gray-900'
+    : size === 'md'
+      ? 'text-sm pl-3 pr-2 py-2 text-sm font-medium bg-gray-50 text-gray-900'
     : 
       'text-sm pl-4 pr-2 py-3 text-sm font-medium text-gray-900 bg-gray-50'
   );

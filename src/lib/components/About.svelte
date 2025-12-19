@@ -1,3 +1,7 @@
+<script lang="ts">
+  import LazyImage from "$lib/components/LazyImage.svelte";
+</script>
+
 <div class="my-4">
   <div class="font-semibold mb-1.5 hidden">About</div>
 
@@ -31,10 +35,10 @@
     </div>
 
     <div class="hidden md:flex">
-      <img
+      <LazyImage
         src="/assets/images/people/Group.png"
         alt="Group Photo"
-        class="rounded-lg max-h-[26rem] w-full h-full object-cover"
+        className="rounded-lg max-h-[26rem] w-full h-full object-cover"
       />
     </div>
   </div>
