@@ -345,7 +345,7 @@
               <div class="flex items-center gap-1 mt-1">
                 {#if publication.tags?.includes('best')}
                   <span 
-                    class="material-symbols-outlined align-middle text-amber-300" 
+                    class="material-symbols-outlined align-middle text-amber-400" 
                     title="Best Paper"
                   >
                     trophy
@@ -353,13 +353,13 @@
                 {/if}
                 {#if publication.tags?.includes('mention')}
                   <span 
-                    class="material-symbols-outlined align-middle text-amber-300" 
+                    class="material-symbols-outlined align-middle text-amber-400" 
                     title="Honorable Mention"
                   >
                     workspace_premium
                   </span>
                 {/if}
-                <span class="text-sm text-amber-300 font-medium">
+                <span class="text-sm text-amber-400 font-medium">
                   {publication.award}
                 </span>
               </div>
