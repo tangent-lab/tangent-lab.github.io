@@ -36,7 +36,7 @@
 
     <div class="hidden md:flex">
       <LazyImage
-        src="/assets/images/people/Group.png"
+        src="/assets/images/people/26spring/Group 2.jpeg"
         alt="Group Photo"
         className="rounded-lg max-h-[26rem] w-full h-full object-cover"
       />

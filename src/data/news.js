@@ -11,6 +11,20 @@ export const news = [
   },
   */
 
+    {
+    title: "Paper Conditionally Accepted to CHI 2026",
+    date: "Jan, 2026",
+    description: "We are excited to share that Tangent Lab’s research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, has been conditionally accepted to CHI 2026!",
+    url: "",
+    image:"/assets/images/news/CHI 2026.png",
+    tag:"News",
+    article:
+    `
+    We are excited to share that Tangent Lab’s research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, has been conditionally accepted to CHI 2026. 
+    The paper is authored by Xueying Zhang, Vidhi Aggarwal, Anjun Zhu, and Lawrence H. Kim. We congratulate the authors on this achievement!
+  `,
+  },
+
   {
     title: "Duc Successfully Defends MSc Thesis",
     date: "Dec, 2025",
