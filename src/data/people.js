@@ -10,12 +10,12 @@ export const people = [
           url: "https://www.lhkim.com/",
         },
         {
-          title: "Email",
-          url: "mailto:lawkim@sfu.ca",
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/lhkim/",
         },
         {
-          title: "X",
-          url: "https://twitter.com/lawhkim",
+          title: "Email",
+          url: "mailto:lawkim@sfu.ca",
         },
       ],
     },

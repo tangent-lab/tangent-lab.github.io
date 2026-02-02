@@ -9,7 +9,7 @@
 </script>
 
 {#snippet personBlock(person)}
-  <div class="relative flex flex-col justify-center rounded-lg group cursor-pointer">
+  <div class="relative flex flex-col justify-center rounded-lg group {person.url || (person.links && person.links.length > 0) ? 'cursor-pointer' : ''}">
     <LazyImage
       src={person.image ?? "/assets/images/user.png"}
       alt={person.name}
@@ -21,7 +21,7 @@
     ></div>
 
     <div class=" absolute bottom-0 text-white p-4">
-      <div class=" mt-1 mb-1.5 group-hover:underline font-medium cursor-pointer line-clamp-2">{person.name}</div>
+      <div class=" mt-1 mb-1.5 {person.url || (person.links && person.links.length > 0) ? 'group-hover:underline' : ''} font-medium line-clamp-2">{person.name}</div>
       <div class="text-sm">{person.title}</div>
 
       <div class="flex gap-1.5 mt-1">
