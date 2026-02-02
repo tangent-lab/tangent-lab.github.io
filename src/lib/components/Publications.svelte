@@ -341,6 +341,29 @@
             <div class="text-sm text-gray-100 font-medium">
               {publication.venue}
             </div>
+            {#if publication.award}
+              <div class="flex items-center gap-1 mt-1">
+                {#if publication.tags?.includes('best')}
+                  <span 
+                    class="material-symbols-outlined align-middle text-amber-300" 
+                    title="Best Paper"
+                  >
+                    trophy
+                  </span>
+                {/if}
+                {#if publication.tags?.includes('mention')}
+                  <span 
+                    class="material-symbols-outlined align-middle text-amber-300" 
+                    title="Honorable Mention"
+                  >
+                    workspace_premium
+                  </span>
+                {/if}
+                <span class="text-sm text-amber-300 font-medium">
+                  {publication.award}
+                </span>
+              </div>
+            {/if}
             <div
               class=" mt-1 mb-1.5 group-hover:underline font-medium cursor-pointer"
             >

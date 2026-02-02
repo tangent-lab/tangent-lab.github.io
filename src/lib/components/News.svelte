@@ -19,6 +19,10 @@
 
   function getGroupedNews() {
     const filtered = getFilteredNews();
+    if (!showAll) {
+      // For home page, don't group by year
+      return { '': filtered };
+    }
     /** @type {Record<string, any[]>} */
     let groupMap = {};
 
@@ -34,6 +38,9 @@
   }
 
   function getSortedYearKeys() {
+    if (!showAll) {
+      return [''];
+    }
     const groups = getGroupedNews();
     const keys = Object.keys(groups);
     keys.sort((a, b) => {
@@ -62,7 +69,9 @@
   
   {#each getSortedYearKeys() as year}
     <div id={"year-" + year} class="mb-8">
-      <div class="font-secondary font-bold text-2xl mb-6">{year}</div>
+      {#if year !== ''}
+        <div class="font-secondary font-bold text-2xl mb-6">{year}</div>
+      {/if}
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {#each getGroupedNews()[year] as item}

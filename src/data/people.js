@@ -1,6 +1,6 @@
 export const people = [
     {
-      image: "/assets/images/people/_Lawrence 2.JPG",
+      image: "/assets/images/people/26spring/Lawrence_final 2.JPG",
       name: "Lawrence Kim",
       title: "Assistant Professor",
       url:"https://www.lhkim.com/",
@@ -21,7 +21,7 @@ export const people = [
     },
     
     {
-      image: "/assets/images/people/_Xueying2 2.JPG",
+      image: "/assets/images/people/26spring/Xueying2 3.JPG",
       name: "Xueying Zhang",
       title: "PhD Student",
       url: "https://xueying720.github.io/",
@@ -38,7 +38,7 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/_Anjun_final 2.JPG",
+      image: "/assets/images/people/26spring/Anjun_Final 2.JPG",
       name: "Anjun Zhu",
       title: "PhD Student",
       url: "https://azhu39.github.io/",
@@ -56,24 +56,19 @@ export const people = [
 
     /* master */
     {
-      image: "/assets/images/people/_Duc_FINAL 2.JPG",
-      name: "Duc Dang",
-      title: "Thesis MSc Student",
-      url: "https://www.linkedin.com/in/dmdang/",
-      links:[
-        {
-          title:"LinkedIn",
-          url:"https://www.linkedin.com/in/dmdang/",
-        },
-      ]
-    },
-
-    {
-      image: "/assets/images/people/Sarah 2.JPG",
+      image: "/assets/images/people/26spring/Sarah_FINAL 2.JPG",
       name: "Sarah Pratt",
       title: "Thesis MSc Student",
-      url: "",
+      url: "https://sarahjade.ca",
       links:[
+        {
+          title: "Website",
+          url: "https://sarahjade.ca",
+        },
+        {
+          title:"LinkedIn",
+          url:"https://www.linkedin.com/in/sarah-jade-pratt/",
+        },
         {
           title:"Email",
           url:"mailto:sarah_pratt_2@sfu.ca",
@@ -82,7 +77,7 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/Qihan 2.JPG",
+      image: "/assets/images/people/26spring/Qihan 2.JPG",
       name: "Qihan Gao",
       title: "Thesis MSc Student",
       url: "",
@@ -96,8 +91,8 @@ export const people = [
     
     
     /* bachelor */
+  
 
-    
     {
       image: "/assets/images/people/Ayana 2.JPG",
       name: "Ayana Hussain",
@@ -115,10 +110,8 @@ export const people = [
       ],
     },
 
-
-
     {
-      image: "/assets/images/people/_Alex 2.JPG",
+      image: "/assets/images/people/26spring/Alex 2.JPG",
       name: "Alex Noh",
       title: "Undergraduate Student",
       url: "https://www.linkedin.com/in/alex-noh-0739a2159/",
@@ -131,25 +124,7 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/Vidhi 2.JPG",
-      name: "Vidhi Aggarwal",
-      title: "Undergraduate Student",
-      url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
-      links: [
-        {
-          title: "LinkedIn",
-          url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
-        },
-        {
-          title: "Email",
-          url: "mailto:vaa17@sfu.ca",
-        },
-        
-      ]
-    },
-    
-    {
-      image: "/assets/images/people/_Saarang 2.JPG",
+      image: "/assets/images/people/26spring/Saarang 2.JPG",
       name: "Saarang Anand",
       title: "Undergraduate Student",
       url: "https://www.linkedin.com/in/saaranganand/",
@@ -166,7 +141,22 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/_Felicia 2.JPG",
+      image: "/assets/images/people/26spring/Yaaska1 2.JPG",
+      name: "Yaaska K. Pandit",
+      title: "Undergraduate Student",
+      url: "",
+      links: []
+    },
+
+    {
+      image: "/assets/images/people/26spring/Micah_final 2.JPG",
+      name: "Micah Baker",
+      title: "Undergraduate Student",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26spring/Felicia_Final 2.JPG",
       name: "Felicia Jiang",
       title: "Undergraduate Student",
       url: "https://www.linkedin.com/in/feliciajyjiang/",
@@ -183,8 +173,9 @@ export const people = [
       ]
     },
 
+
     {
-      image: "/assets/images/people/_Audrey 2.jpg",
+      image: "/assets/images/people/26spring/Audrey 2.jpg",
       name: "Audrey Safikhani",
       title: "Undergraduate Student",
       url: "http://linkedin.com/in/audrey-safikhani",
@@ -201,36 +192,59 @@ export const people = [
       ]
     },
 
-    {
-      image: "/assets/images/people/_Sajan 2.JPG",
-      name: "Sajan Senghera",
-      title: "Undergraduate Student",
-      url: "",
-      links: []
-    },
 
-    {
-      image: "/assets/images/people/_Yaaska 2.JPG",
-      name: "Yaaska K. Pandit",
-      title: "Undergraduate Student",
-      url: "",
-      links: []
-    },
-
-    {
-      image: "/assets/images/people/_James 2.JPG",
-      name: "James Chuong",
-      title: "Undergraduate Student",
-      url: "",
-      links: []
-    },
     
     {
-      image: "/assets/images/user.png",
-      name: "Micah Baker",
+      image: "/assets/images/people/26spring/Yecheng_Final 2.JPG",
+      name: "Yecheng Wang",
+      title: "Undergraduate Student",
+      url: "https://www.linkedin.com/in/yecheng-wang",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/yecheng-wang",
+        },
+        {
+          title: "Email",
+          url: "mailto:yecheng.wang@sfu.ca",
+        },
+      ]
+    },
+    {
+      image: "/assets/images/people/26spring/Andrew_Final 2.JPG",
+      name: "Andrew Gu",
       title: "Undergraduate Student",
       url: "",
     },
+
+
+
+
+    {
+      image: "/assets/images/people/26spring/Nardos 2.JPG",
+      name: "Nardos Solomon",
+      title: "Undergraduate Student",
+      url: "",
+    },
+
+
+    {
+      image: "/assets/images/people/26spring/Dou_Final 2.JPG",
+      name: "Dou Gwon",
+      title: "Undergraduate Student",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26spring/Flora_final 2.JPG",
+      name: "Flora Jin",
+      title: "Undergraduate Student",
+      url: "",
+    },
+
+
+
+
 
     
     /* collaborators */
@@ -261,27 +275,72 @@ export const people = [
 
     /* alumni */
     {
+      image: "/assets/images/people/_Duc_FINAL 2.JPG",
+      name: "Duc Dang",
+      title: "Thesis MSc, 2025",
+      alumni: true,
+      url: "https://www.linkedin.com/in/dmdang/",
+      links:[
+        {
+          title:"Now AI Engineer at Dialpad",
+          url:"https://www.linkedin.com/in/dmdang/",
+        },
+      ]
+    },
+    
+    {
+      image: "/assets/images/people/Vidhi 2.JPG",
+      name: "Vidhi Aggarwal",
+      title: "Undergraduate Student",
+      alumni: true,
+      url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
+        },
+        {
+          title: "Email",
+          url: "mailto:vaa17@sfu.ca",
+        },
+        
+      ]
+    },
+
+    {
+      image: "/assets/images/people/_James 2.JPG",
+      name: "James Chuong",
+      alumni: true,
+      title: "Undergraduate Student",
+      url: "",
+      links: []
+    },
+
+
+    {
+      image: "/assets/images/people/_Sajan 2.JPG",
+      name: "Sajan Senghera",
+      alumni: true,
+      title: "Undergraduate Student",
+      url: "",
+      links: []
+    },
+
+    {
       image: "/assets/images/people/Yousef 2.JPG",
       name: "Yousef Haiba",
-      title: "Undergraduate Student",
+      title: "BASc, 2025",
       alumni: true,
       url: "https://yousefhaiba18.github.io/Portfolio/",
       links: [
         {
-          title: "Website",
+          title: "Now Associate Solutions Engineer at BMC Helix",
           url: "https://yousefhaiba18.github.io/Portfolio/",
-        },
-        {
-          title: "LinkedIn",
-          url: "https://www.linkedin.com/in/yousef-haiba-333898233/",
-        },
-        {
-          title: "Email",
-          url: "mailto:yousefhaiba1@gmail.com",
-        },
+        }
       ],
     },
     
+
     
     {
       image: "/assets/images/people/Gary.png",
@@ -300,7 +359,7 @@ export const people = [
     {
       image: "/assets/images/people/Tim.png",
       name: "Tim Baek",
-      title: "Thesis MSc Student, 2024",
+      title: "Thesis MSc, 2024",
       alumni: true,
       url: "https://jryng.com/",
       links:[
