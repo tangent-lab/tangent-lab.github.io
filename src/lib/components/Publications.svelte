@@ -2,7 +2,9 @@
   import LazyImage from './LazyImage.svelte';
   let { publications, showList = true } = $props();
 
-  const limitedPublications = publications.slice(0, 6);
+  const limitedPublications = !showList
+    ? publications.filter((pub) => !pub.hideFromHome).slice(0, 6)
+    : publications.slice(0, 6);
 
   let selectedYear = 'All';
   let selectedType = 'All';

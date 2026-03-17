@@ -181,7 +181,7 @@
         {/if}
       </div>
       {#if publication?.bibtex}
-        <pre class="rounded-lg p-4 bg-gray-50"><code>{publication.bibtex}</code></pre>
+        <pre class="rounded-lg p-4 bg-gray-50 overflow-x-auto whitespace-pre-wrap break-words"><code>{publication.bibtex}</code></pre>
       {:else}
         <p class="text-sm text-gray-500">No BibTeX provided.</p>
       {/if}

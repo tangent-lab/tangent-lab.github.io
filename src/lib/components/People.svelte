@@ -3,7 +3,9 @@
   let { people, showAlumni = true } = $props();
 
   const currentStudents = people.filter(person => !person.alumni && !person.visitor && !person.collaborator);
-  const alumniStudents = people.filter(person => person.alumni);
+  const alumniGrad = people.filter(person => person.alumni && person.alumniType === 'grad');
+  const alumniUndergrad = people.filter(person => person.alumni && person.alumniType === 'undergrad');
+  const alumniOther = people.filter(person => person.alumni && !person.alumniType);
   const visitors = people.filter(person => person.visitor);
   const collaborators = people.filter(person => person.collaborator);
 </script>
@@ -109,16 +111,55 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-      {#each alumniStudents as person}
-        {#if person?.url}
-          <a href={person.url} target="_blank" class="cursor-pointer">
+    {#if alumniGrad.length > 0}
+      <div class="mt-8 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Graduate Students</h3>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {#each alumniGrad as person}
+          {#if person?.url}
+            <a href={person.url} target="_blank" class="cursor-pointer">
+              {@render personBlock(person)}
+            </a>
+          {:else}
             {@render personBlock(person)}
-          </a>
-        {:else}
-          {@render personBlock(person)}
-        {/if}
-      {/each}
-    </div>
+          {/if}
+        {/each}
+      </div>
+    {/if}
+
+    {#if alumniUndergrad.length > 0}
+      <div class="mt-8 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Undergraduate Students</h3>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {#each alumniUndergrad as person}
+          {#if person?.url}
+            <a href={person.url} target="_blank" class="cursor-pointer">
+              {@render personBlock(person)}
+            </a>
+          {:else}
+            {@render personBlock(person)}
+          {/if}
+        {/each}
+      </div>
+    {/if}
+
+    {#if alumniOther.length > 0}
+      <div class="mt-8 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Other Alumni</h3>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {#each alumniOther as person}
+          {#if person?.url}
+            <a href={person.url} target="_blank" class="cursor-pointer">
+              {@render personBlock(person)}
+            </a>
+          {:else}
+            {@render personBlock(person)}
+          {/if}
+        {/each}
+      </div>
+    {/if}
   {/if}
 </div>
