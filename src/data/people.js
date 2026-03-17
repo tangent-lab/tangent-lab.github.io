@@ -210,15 +210,6 @@ export const people = [
         },
       ]
     },
-    {
-      image: "/assets/images/people/26spring/Andrew_Final 2.JPG",
-      name: "Andrew Gu",
-      title: "Undergraduate Student",
-      url: "",
-    },
-
-
-
 
     {
       image: "/assets/images/people/26spring/Nardos 2.JPG",
@@ -249,6 +240,22 @@ export const people = [
     
     /* collaborators */
     {
+      image: "/assets/images/people/collaborator/Angelica Lim.png",
+      name: "Dr. Angelica Lim",
+      title: "School of Computing Science, SFU",
+      collaborator: true,
+      url: "https://www.sfu.ca/fas/computing/people/faculty/faculty-members/angelica-lim.html",
+    },
+
+    {
+      image: "https://hrapi.hkust-gz.edu.cn/photo/img?key=00011A1000000001RSUK",
+      name: "Dr. Xin Tong",
+      title: "Assistant Professor, Thrust of Computational Media and Arts, HKUST(GZ)",
+      collaborator: true,
+      url: "https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435",
+    },
+
+    {
       image: "/assets/images/people/collaborator/Chris Napier.png",
       name: "Dr. Chris Napier",
       title: "Department of Biomedical Physiology and Kinesiology, SFU",
@@ -264,21 +271,13 @@ export const people = [
       url: "https://surgery.med.ubc.ca/justin-oh-ba-md-frcpc/",
     },
 
-    {
-      image: "/assets/images/people/collaborator/Angelica Lim.png",
-      name: "Dr. Angelica Lim",
-      title: "School of Computing Science, SFU",
-      collaborator: true,
-      url: "https://www.sfu.ca/fas/computing/people/faculty/faculty-members/angelica-lim.html",
-    },
-
-
     /* alumni */
     {
       image: "/assets/images/people/_Duc_FINAL 2.JPG",
       name: "Duc Dang",
       title: "Thesis MSc, 2025",
       alumni: true,
+      alumniType: "grad",
       url: "https://www.linkedin.com/in/dmdang/",
       links:[
         {
@@ -293,6 +292,7 @@ export const people = [
       name: "Vidhi Aggarwal",
       title: "Undergraduate Student",
       alumni: true,
+      alumniType: "undergrad",
       url: "https://www.linkedin.com/in/vidhi-aggarwal-383177256/",
       links: [
         {
@@ -311,6 +311,7 @@ export const people = [
       image: "/assets/images/people/_James 2.JPG",
       name: "James Chuong",
       alumni: true,
+      alumniType: "undergrad",
       title: "Undergraduate Student",
       url: "",
       links: []
@@ -321,6 +322,7 @@ export const people = [
       image: "/assets/images/people/_Sajan 2.JPG",
       name: "Sajan Senghera",
       alumni: true,
+      alumniType: "undergrad",
       title: "Undergraduate Student",
       url: "",
       links: []
@@ -331,6 +333,7 @@ export const people = [
       name: "Yousef Haiba",
       title: "BASc, 2025",
       alumni: true,
+      alumniType: "undergrad",
       url: "https://yousefhaiba18.github.io/Portfolio/",
       links: [
         {
@@ -341,12 +344,28 @@ export const people = [
     },
     
 
-    
+
+    {
+      image: "/assets/images/people/Tim.png",
+      name: "Tim Baek",
+      title: "Thesis MSc, 2024",
+      alumni: true,
+      alumniType: "grad",
+      url: "https://jryng.com/",
+      links:[
+        {
+          title:"Now Leading Open WebUI",
+          url: "https://openwebui.com/",
+        }
+      ]
+    },
+
     {
       image: "/assets/images/people/Gary.png",
       name: "Gary(Huayu) Wang",
       title: "Professional MSc Student",
       alumni: true,
+      alumniType: "grad",
       url: "https://www.linkedin.com/in/gary-why/",
       links:[
         {
@@ -357,23 +376,11 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/Tim.png",
-      name: "Tim Baek",
-      title: "Thesis MSc, 2024",
-      alumni: true,
-      url: "https://jryng.com/",
-      links:[
-        {
-          title:"Now Leading Open WebUI",
-          url: "https://openwebui.com/",
-        }
-      ]
-    },
-    {
       image: "/assets/images/people/janghyeon.jpeg",
       name: "Janghyeon Lee",
       title: "Professional MSc, 2023",
       alumni: true,
+      alumniType: "grad",
       url: "https://janghyeon-lee.github.io/",
       links:[
         {
@@ -387,6 +394,7 @@ export const people = [
       name: "Jiadi(Tian) Luo",
       title: "BSc, 2024",
       alumni: true,
+      alumniType: "undergrad",
       url: "https://jiadil.github.io/portfolio/",
       links:[
         {
@@ -400,6 +408,7 @@ export const people = [
       name: "Samira Pulatova",
       title: "BSc, 2024",
       alumni: true,
+      alumniType: "undergrad",
       url: "",
       links:[
         {
@@ -413,6 +422,7 @@ export const people = [
       name: "Keeyan Kazemi",
       title: "BSc, 2023",
       alumni: true,
+      alumniType: "undergrad",
       url: "https://www.linkedin.com/in/keeyan-kazemi/",
       links:[
         {
@@ -426,6 +436,7 @@ export const people = [
       name: "Duy Phuoc (Peter) Luong",
       title: "BSc",
       alumni: true,
+      alumniType: "undergrad",
       url: "",
     },
 
