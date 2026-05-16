@@ -11,7 +11,65 @@ export const news = [
   },
   */
 
-    {
+  {
+    title: "Xueying Presented at CHI 2026",
+    date: "Apr, 2026",
+    description: "Xueying Zhang presented her research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, at CHI 2026.",
+    url: "",
+    image:"/assets/images/news/IMG_1335.jpg",
+    tag:"News",
+    article:
+    `
+    We are excited to share that Xueying Zhang presented her research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, at CHI 2026.
+    
+    Emotion regulation (ER) is a dynamic process that often unfolds in social contexts. However, current digital ER tools predominantly rely on single-agent systems that lack the complexity of social dynamics. Swarm user interfaces present unique affordances for ER through their collective adaptability and expressive group behaviour. Yet, their potential in supporting ER remains underexplored. To investigate how swarm user interfaces can be designed to support ER, we conducted a series of speculative participatory design workshops with 15 participants through the Magic Machine Workshop method, where participants created and enacted interactive swarm-based artifacts with craft materials. The analysis led to diverse contexts of use, envisioned swarm framing, and interaction modes. Based on these findings, we synthesize eight interaction patterns that translate abstract user metaphors into robotic behaviors. We conclude by articulating design opportunities and challenges, positioning swarm interfaces as a novel medium for ER support.
+    
+    CHI is the premier international conference in human-computer interaction, bringing together researchers and practitioners from around the world to share advances in interactive technologies and design. Below is a snapshot of BC researchers at CHI 2026. 
+
+    <div class="flex place-content-center"><img src="public/assets/images/news/IMG_1329.png" class="rounded-lg" alt="SFU at CHI 2026"></div>
+    
+    <div class="flex place-content-center">
+      <img src="/assets/images/news/DB967674-AACA-436A-BFBD-8CC9013F2D8B.png" class="rounded-lg" alt="Xueying and Lawrenceat CHI 2026">
+    </div>
+    Congratulations to Xueying and the entire author team on presenting this work at CHI 2026! We encourage you to check out the full paper and presentation on our Publications page soon! 👏
+  `,
+  },
+
+  {
+    title: "Assistive DR Project Shortlisted for 2026 CSDC Diversity Award",
+    date: "Apr, 2026",
+    description: "We are excited to share that Tangent Lab’s assistive diminished reality (DR) project has been shortlisted for the 2026 CSDC Diversity Award at Simon Fraser University.",
+    url: "",
+    image:"https://www.sfu.ca/content/sfu/fas/computing/about/diversity-cs/csdc-diversity-project-presentations/2026-diversity-project-presentation/jcr:content/main_content/image_1123539519.img.2000.high.jpg/1776290424326.jpg",
+    tag:"News",
+    article:
+    `
+    We are excited to share that Tangent Lab’s assistive diminished reality (DR) project has been shortlisted for the 2026 CSDC Diversity Award at Simon Fraser University.
+
+    The shortlisted project, “Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD”, explores how diminished reality technologies can help reduce visual distractions and support attention management for neurodivergent students. Through a participatory co-design process, the work investigates inclusive approaches to creating more accessible learning environments.
+
+    The CSDC Diversity Award recognizes projects that advance diversity, equity, inclusion, and accessibility in computing science through socially impactful research and design. Congratulations to the team on this recognition!
+
+    Learn more about the 2026 Diversity Project Presentations: <a href="https://www.sfu.ca/fas/computing/about/diversity-cs/csdc-diversity-project-presentations/2026-diversity-project-presentation.html" target="_blank" rel="noopener noreferrer"> 📎 GSFU CSDC Diversity Project Presentations 2026</a>
+  `,
+  },
+
+  {
+    title: "Paper Conditionally Accepted to DIS 2026",
+    date: "Mar, 2026",
+    description: "We are excited to announce that the paper “Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD” has been conditionally accepted to DIS 2026.",
+    url: "",
+    image:"/assets/images/news/DIS 2026.png",
+    tag:"News",
+    article:
+    `
+    We are excited to announce that the paper “Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD” has been conditionally accepted to DIS 2026.
+
+    The paper is authored by Heesuk Noh, Parastoo Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, and Lawrence Kim. Congratulations to the authors on this exciting achievement! We look forward to sharing more details about the work at DIS 2026.
+  `,
+  },
+
+  {
     title: "Paper Conditionally Accepted to CHI 2026",
     date: "Jan, 2026",
     description: "We are excited to share that Tangent Lab’s research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, has been conditionally accepted to CHI 2026!",

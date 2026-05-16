@@ -248,11 +248,11 @@ export const people = [
     },
 
     {
-      image: "https://hrapi.hkust-gz.edu.cn/photo/img?key=00011A1000000001RSUK",
-      name: "Dr. Xin Tong",
-      title: "Assistant Professor, Thrust of Computational Media and Arts, HKUST(GZ)",
+      image: "https://www.sfu.ca/content/sfu/siat/people/research-faculty/wolfgang-stuerzlinger.img.-1584295581.png",
+      name: "Dr. Wolfgang Stuerzlinger",
+      title: "School of Interactive Arts and Technology, SFU",
       collaborator: true,
-      url: "https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435",
+      url: "https://www.sfu.ca/siat/people/research-faculty/wolfgang-stuerzlinger.html",
     },
 
     {
@@ -264,11 +264,51 @@ export const people = [
     },
 
     {
+      image: "https://hrapi.hkust-gz.edu.cn/photo/img?key=00011A1000000001RSUK",
+      name: "Dr. Xin Tong",
+      title: "Thrust of Computational Media and Arts, HKUST(GZ)",
+      collaborator: true,
+      url: "https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=435",
+    },
+
+    {
+      image: "https://www.cs.ubc.ca/sites/default/files/styles/profile_page/public/people/karon-maclean-2025.png?h=e9149908&itok=WRnOgcdn",
+      name: "Dr. Karon MacLean",
+      title: "Department of Computer Science, UBC",
+      collaborator: true,
+      url: "https://www.cs.ubc.ca/people/karon-maclean",
+    },
+
+    {
+      image: "https://psych.cms.arts.ubc.ca/wp-content/uploads/sites/2/2017/11/cropped-Screen-Rebecca-Todd-1-2.jpg",
+      name: "Dr. Rebecca Todd",
+      title: "Department of Psychology, UBC",
+      collaborator: true,
+      url: "https://psych.ubc.ca/profile/rebecca-todd/",
+    },
+
+    {
+      image: "https://psych.cms.arts.ubc.ca/wp-content/uploads/sites/2/2018/08/AmoriMikamiPsychWebsite.png",
+      name: "Dr. Amori Mikami",
+      title: "Department of Psychology, UBC",
+      collaborator: true,
+      url: "https://psych.ubc.ca/profile/amori-mikami/",
+    },
+
+    {
       image: "/assets/images/user.png",
       name: "Dr. Justin Oh",
       title: "Department of Surgery, UBC",
       collaborator: true,
       url: "https://surgery.med.ubc.ca/justin-oh-ba-md-frcpc/",
+    },
+
+    {
+      image: "https://www.katherineinterface.com/rw_common/images/ella-portrait.jpg",
+      name: "Dr. Katherine Isbister",
+      title: "Department of Computational Media, UCSC",
+      collaborator: true,
+      url: "https://www.katherineinterface.com/",
     },
 
     /* alumni */

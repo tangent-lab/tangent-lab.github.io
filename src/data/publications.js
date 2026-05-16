@@ -1,4 +1,37 @@
 export const publications = [
+    {
+    title: "Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces",
+    abstract: `Emotion regulation (ER) is a dynamic process that often unfolds in social contexts. However, current digital ER tools predominantly rely on single-agent systems that lack the complexity of social dynamics. Swarm user interfaces present unique affordances for ER through their collective adaptability and expressive group behaviour. However, their potential in supporting ER remains underexplored. To investigate how swarm user interfaces can be designed to support ER, we conducted a series of speculative participatory design workshops with 15 participants through the Magic Machine Workshop method, where participants created and enacted interactive swarm-based artifacts with craft materials. The analysis led to diverse contexts of use, envisioned swarm framing, and interaction modes. Based on these findings, we synthesize eight interaction patterns that translate abstract user metaphors into robotic behaviors. We conclude by articulating design opportunities and challenges, positioning swarm interfaces as a novel medium for ER support.`,
+    authors: "Xueying Zhang, Vidhi Aggarwal, Anjun Zhu, Lawrence H Kim",
+    institutions: "Simon Fraser University",
+    venue: "CHI 2026",
+    year: 2026,
+    tags: [],
+    links: [
+      {
+        title: "PDF",
+        url: "https://xueying720.github.io/pdf/chi26-1316.pdf",
+      }
+    ],
+    image: "/assets/images/publications/swarmER.gif",
+    doi: "10.1145/3772318.3791599",
+    bibtex: `@inproceedings{10.1145/3772318.3791599,
+      author = {Zhang, Xueying and Aggarwal, Vidhi and Zhu, Anjun and H Kim, Lawrence},
+      title = {Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces},
+      year = {2026},
+      isbn = {9798400722783},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      doi = {10.1145/3772318.3791599},
+      abstract = {Emotion regulation (ER) is a dynamic process that often unfolds in social contexts. However, current digital ER tools predominantly rely on single-agent systems that lack the complexity of social dynamics. Swarm user interfaces present unique affordances for ER through their collective adaptability and expressive group behaviour. However, their potential in supporting ER remains underexplored. To investigate how swarm user interfaces can be designed to support ER, we conducted a series of speculative participatory design workshops with 15 participants through the Magic Machine Workshop method, where participants created and enacted interactive swarm-based artifacts with craft materials. The analysis led to diverse contexts of use, envisioned swarm framing, and interaction modes. Based on these findings, we synthesize eight interaction patterns that translate abstract user metaphors into robotic behaviors. We conclude by articulating design opportunities and challenges, positioning swarm interfaces as a novel medium for ER support.},
+      booktitle = {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
+      articleno = {1440},
+      numpages = {23},
+      keywords = {Emotion Regulation, Swarm User Interfaces, Participatory Design},
+      series = {CHI '26}
+    }`,
+  },
+
   {
     title: "RoboTheater: A Multi-Robot Storytelling Platform from LLM Scripts to Stage Performance",
     abstract: "We present RoboTheater, a multi-robot storytelling platform, designed to explore and demonstrate the expressive capabilities of robots in stage execution. RoboTheater bridges computational narrative generation with embodied robotic execution, enabling robots to perform with varied dialogues and movements to create immersive stage narratives. The system uses large language models (LLMs) to generate structured scripts that are mapped into robots’ movements, speech, and visual projections, with all commands sent over a wireless network. A user study with 13 participants was conducted to evaluate the system’s usability and gather feedback. Our findings indicate that the RoboTheater effectively conveys emotion and character through multimodal cues, sustaining audience engagement and immersion. The work expands multi-robot storytelling and paves the way for creative, narrative applications.",
@@ -33,6 +66,7 @@ export const publications = [
       series = {TEI '26}
       },`,
   },
+
   {
     title: "How Neurotypical and Autistic Children Interact Nonverbally with Anthropomorphic Agents in Open-Ended Tasks",
     abstract: "What nonverbal behaviors should a robot respond to? Understanding how children—both neurotypical and autistic—engage with embodied artificial agents is critical for developing inclusive and socially interactive systems. In this paper, we study \"open-ended\" unconstrained interactions with embodied agents, where little is known about how children behave nonverbally when given few instructions. We conducted a Wizard-of-Oz study in which children were invited to interact nonverbally with 6 different embodied virtual characters displayed on a television screen. We collected 563 (141 unique) nonverbal behaviors produced by children and compare the children’s interaction patterns with those previously reported in an adult study. We also report the presence of repetitive face and hand movements, which should be considered in the development of nonverbally interactive artificial agents.",
@@ -71,7 +105,7 @@ export const publications = [
     abstract: "Food is essential for human health, growth, and development. However, children need more learning materials and motivation to receive food literacy education or know the fundamental food processes from farm to table. In this work, we explored the design of a prototype named WooGu with tangible user interfaces (TUI) and embodied interactions, which aims to improve young children’s food literacy. WooGu presents three design features: a cube displaying user interfaces, step-by-step tasks guiding children to learn food from farm to table, and hands-on props made by cardboard empowering embodied interactions. We evaluated WooGu with two families in a pilot test, and the findings suggested that WooGu provides children with the embodied experience of food production, improving their food literacy, logical thinking, and practical ability. This research contributed to the human-food interaction area and provided a novel way of learning food literacy for children through embodied interactions with WooGu.",
     authors: "Hongni Ye, Tong Wu, Lawrence H Kim, Min Fan, Xin Tong",
     institutions: "Simon Fraser University",
-    venue: "IDC '23",
+    venue: "IDC 2023",
     year: 2023,
     hideFromHome: true,
     tags: [],
@@ -104,7 +138,7 @@ export const publications = [
     abstract: "The IDC research community has a growing interest in designing AI interfaces for children with special educational needs. Nonetheless, little research has explored the research and design issues, rationale, challenges, and opportunities in this field. Therefore, we propose to host a half-day workshop to bring together researchers and practitioners from the Learning & Education, Accessibility, and Intelligent User Interfaces sub-fields to discuss and identify existing design issues, challenges, and collaboration barriers, to establish consensus on the design of a pragmatic framework, as well as explore future innovation and research opportunities. We aim to foster mutual understanding and in-depth collaboration among researchers in the IDC community.",
     authors: "Min Fan, Xin Tong, Zikai Alex Wen, Ozge Nilay Yalcin, Lawrence H Kim, Zhuohao Wu, Laura Benton",
     institutions: "Simon Fraser University",
-    venue: "IDC '23",
+    venue: "IDC 2023",
     year: 2023,
     hideFromHome: true,
     tags: [],
