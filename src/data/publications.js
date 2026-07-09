@@ -9,7 +9,7 @@ export const publications = [
     links: [
       {
         title: "PDF",
-        url: "public/assets/pdf/3800645.3813095.pdf",
+        url: "/assets/pdf/3800645.3813095.pdf",
       },
     ],
     image: "/assets/images/publications/DR.png",
