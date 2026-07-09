@@ -1,5 +1,39 @@
 export const publications = [
     {
+    title: "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD",
+    abstract: `Diminished Reality (DR) modifies or removes elements of the perceived environment. We explored DR for attention support through diary studies, interviews, and speculative co-design with 15 university students with ADHD. Participants described a persistent gap between intention and attention, and the use of externalization strategies that encounter fundamental limits in physical reality. In co-design, rather than reasoning from visual operations, participants articulated which properties of stimuli they needed to perceive versus filter, revealing cases where visual diminishment does not reliably map to attentional diminishment. We contribute rich descriptive data on the attentional challenges and DR preferences of students with ADHD, and propose Attentional Diminishment, a sensitizing concept that reframes DR for attention support from visual outcomes to attentional effects.`,
+    authors: "Heesuk Noh, Parastoo Safikhani, Anjun Zhu, Wolfgang Stuerzlinger, Lawrence H Kim",
+    institutions: "",
+    venue: "DIS '26",
+    year: 2026,
+    links: [
+      {
+        title: "PDF",
+        url: "public/assets/pdf/3800645.3813095.pdf",
+      },
+    ],
+    image: "/assets/images/publications/DR.png",
+    doi: "10.1145/3800645.3813095",
+    bibtex: `@inproceedings{10.1145/3800645.3813095,
+      author = {Noh, Heesuk and Safikhani, Parastoo and Zhu, Anjun and Stuerzlinger, Wolfgang and Kim, Lawrence H},
+      title = {Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD},
+      year = {2026},
+      isbn = {9798400725630},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      doi = {10.1145/3800645.3813095},
+      abstract = {Diminished Reality (DR) modifies or removes elements of the perceived environment. We explored DR for attention support through diary studies, interviews, and speculative co-design with 15 university students with ADHD. Participants described a persistent gap between intention and attention, and the use of externalization strategies that encounter fundamental limits in physical reality. In co-design, rather than reasoning from visual operations, participants articulated which properties of stimuli they needed to perceive versus filter, revealing cases where visual diminishment does not reliably map to attentional diminishment. We contribute rich descriptive data on the attentional challenges and DR preferences of students with ADHD, and propose Attentional Diminishment, a sensitizing concept that reframes DR for attention support from visual outcomes to attentional effects.},
+      booktitle = {Proceedings of the 2026 Designing Interactive Systems Conference},
+      pages = {891–903},
+      numpages = {13},
+      keywords = {Diminished Reality, ADHD, Accessibility, Attention, Augmented Reality, Extended Reality},
+      location = {
+      },
+      series = {DIS '26}
+    }`,
+  },
+
+  {
     title: "Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces",
     abstract: `Emotion regulation (ER) is a dynamic process that often unfolds in social contexts. However, current digital ER tools predominantly rely on single-agent systems that lack the complexity of social dynamics. Swarm user interfaces present unique affordances for ER through their collective adaptability and expressive group behaviour. However, their potential in supporting ER remains underexplored. To investigate how swarm user interfaces can be designed to support ER, we conducted a series of speculative participatory design workshops with 15 participants through the Magic Machine Workshop method, where participants created and enacted interactive swarm-based artifacts with craft materials. The analysis led to diverse contexts of use, envisioned swarm framing, and interaction modes. Based on these findings, we synthesize eight interaction patterns that translate abstract user metaphors into robotic behaviors. We conclude by articulating design opportunities and challenges, positioning swarm interfaces as a novel medium for ER support.`,
     authors: "Xueying Zhang, Vidhi Aggarwal, Anjun Zhu, Lawrence H Kim",

@@ -12,6 +12,41 @@ export const news = [
   */
 
   {
+    title: "Alex Presented Research at DIS 2026",
+    date: "Jun, 2026",
+    description: "Congratulations to Alex Noh for presenting his research at the ACM Designing Interactive Systems Conference (DIS 2026).",
+    url: "",
+    image: "public/assets/images/publications/DR.png",
+    tag: "News",
+    article: `
+    Tangent Lab member Alex presented the paper "Exploring Diminished Reality for Attention Support: A Co-Design Study with Students with ADHD" at the ACM Designing Interactive Systems Conference (DIS 2026).
+
+    The paper investigates how Diminished Reality (DR) can support attention management for university students with ADHD. Through diary studies, interviews, and speculative co-design sessions, the research reveals that reducing visual information alone does not necessarily reduce attentional demands. Instead, participants emphasized the need to selectively filter the properties of stimuli that interfere with focus.
+
+    Based on these findings, the work introduces Attentional Diminishment, a new sensitizing concept that reframes diminished reality from modifying visual scenes to supporting users' attentional experiences. The research contributes new insights into designing accessible and inclusive interactive systems for neurodivergent users.
+
+    Congratulations to Alex and the author team on presenting this work at DIS 2026! Check out the paper here: <a href="https://dl.acm.org/doi/full/10.1145/3800645.3813095" target="_blank" rel="noopener noreferrer">📎 Full Paper</a> 👏
+    `,
+  },
+
+  {
+    title: "Alex and Xueying Presented at Salish SIGCHI",
+    date: "May, 2026",
+    description: "Tangent Lab members Alex Noh and Xueying Zhang presented their research at the Salish SIGCHI Celebration of Research in Vancouver.",
+    url: "",
+    image: "public/assets/images/news/salish chi.jpeg",
+    tag: "News",
+    article: `
+    <div class="flex place-content-center"><img src="public/assets/images/news/salish chi 2.jpeg" class="rounded-lg" alt="Salish SIGCHI"></div>
+    Tangent Lab members <strong>Alex Noh</strong> and <strong>Xueying Zhang</strong> presented their research at the <strong>Salish SIGCHI Celebration of Research</strong>, held in Vancouver. It was a great opportunity to connect with the local HCI community and celebrate exciting research happening across the region.
+
+    The event brought together HCI researchers and students from across the Pacific Northwest to share ongoing work, exchange ideas, and strengthen connections within the regional HCI community. Alex and Xueying presented their latest research and engaged in discussions with fellow researchers.
+
+    Learn more about the Salish SIGCHI Celebration of Research: <a href="https://salishsigchi.acm.org/salish-sigchi-celebration-of-research-may-22-in-vancouver/" target="_blank" rel="noopener noreferrer">📎 Salish SIGCHI</a>
+    `,
+  },
+
+  {
     title: "Xueying Presented at CHI 2026",
     date: "Apr, 2026",
     description: "Xueying Zhang presented her research paper, “Feeling with Many: Rethinking Emotion Regulation with Swarm User Interfaces”, at CHI 2026.",
@@ -34,7 +69,7 @@ export const news = [
     Congratulations to Xueying and the entire author team on presenting this work at CHI 2026! We encourage you to check out the full paper and presentation on our Publications page soon! 👏
   `,
   },
-
+  
   {
     title: "Assistive DR Project Shortlisted for 2026 CSDC Diversity Award",
     date: "Apr, 2026",
