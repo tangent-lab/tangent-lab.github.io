@@ -246,6 +246,39 @@
       </div>
       <People {people}  showAlumni={false} />        
 
+      <section class="mt-16" aria-labelledby="funding-heading">
+        <h2 id="funding-heading" class="text-2xl font-semibold text-gray-800">Funding</h2>
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-8 px-2 py-4">
+          <a
+            href="https://nserc-crsng.canada.ca/en"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Natural Sciences and Engineering Research Council of Canada"
+            class="flex h-20 items-center justify-center rounded-md bg-white p-3 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img src="/assets/images/funding/NSERC_RGB.png" alt="NSERC" class="max-h-full max-w-full object-contain" />
+          </a>
+          <a
+            href="https://www.innovation.ca/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Canada Foundation for Innovation"
+            class="flex h-20 items-center justify-center rounded-md bg-white p-3 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img src="/assets/images/funding/CFI-Logo-RGB.png" alt="Canada Foundation for Innovation" class="max-h-full max-w-full object-contain" />
+          </a>
+          <a
+            href="https://openwebui.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open WebUI"
+            class="flex h-20 items-center justify-center rounded-md bg-white p-3 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <img src="/assets/images/funding/open-webui-wordmark.png" alt="Open WebUI" class="max-h-full max-w-full object-contain" />
+          </a>
+        </div>
+      </section>
+
       <div class="flex justify-between items-center  mt-16">
         <span class="text-2xl font-semibold text-gray-800">Contact Us</span>
         <Button on:click={() => navigate("contact")}  size="lg" ariaLabel="View More  →" />
