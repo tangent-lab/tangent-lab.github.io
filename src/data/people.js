@@ -1,6 +1,6 @@
 export const people = [
     {
-      image: "/assets/images/people/26spring/Lawrence_final 2.JPG",
+      image: "/assets/images/people/26summer/Lawrence.jpg",
       name: "Lawrence Kim",
       title: "Assistant Professor",
       url:"https://www.lhkim.com/",
@@ -21,7 +21,7 @@ export const people = [
     },
     
     {
-      image: "/assets/images/people/26spring/Xueying2 3.JPG",
+      image: "/assets/images/people/26summer/Xueying2.JPG",
       name: "Xueying Zhang",
       title: "PhD Student",
       url: "https://xueying720.github.io/",
@@ -54,9 +54,25 @@ export const people = [
       ],
     },
 
+    {
+      image: "/assets/images/user.png",
+      name: "Yucong Cai",
+      title: "PhD Student",
+      url: "",
+      links: [],
+    },
+
+    {
+      image: "/assets/images/user.png",
+      name: "James Choi",
+      title: "PhD Student",
+      url: "",
+      links: [],
+    },
+
     /* master */
     {
-      image: "/assets/images/people/26spring/Sarah_FINAL 2.JPG",
+      image: "/assets/images/people/26summer/Sarah2.JPG",
       name: "Sarah Pratt",
       title: "Thesis MSc Student",
       url: "https://sarahjade.ca",
@@ -111,7 +127,7 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/26spring/Alex 2.JPG",
+      image: "/assets/images/people/26summer/Alex1.JPG",
       name: "Alex Noh",
       title: "Undergraduate Student",
       url: "https://www.linkedin.com/in/alex-noh-0739a2159/",
@@ -141,21 +157,6 @@ export const people = [
     },
 
     {
-      image: "/assets/images/people/26spring/Yaaska1 2.JPG",
-      name: "Yaaska K. Pandit",
-      title: "Undergraduate Student",
-      url: "",
-      links: []
-    },
-
-    {
-      image: "/assets/images/people/26spring/Micah_final 2.JPG",
-      name: "Micah Baker",
-      title: "Undergraduate Student",
-      url: "",
-    },
-
-    {
       image: "/assets/images/people/26spring/Felicia_Final 2.JPG",
       name: "Felicia Jiang",
       title: "Undergraduate Student",
@@ -175,67 +176,65 @@ export const people = [
 
 
     {
-      image: "/assets/images/people/26spring/Audrey 2.jpg",
-      name: "Audrey Safikhani",
-      title: "Undergraduate Student",
-      url: "http://linkedin.com/in/audrey-safikhani",
-      links: [
-        {
-          title: "LinkedIn",
-          url: "http://linkedin.com/in/audrey-safikhani",
-        },
-        {
-          title: "Email",
-          url: "mailto:Safikhani.parasto@gmail.com",
-        },
-        
-      ]
-    },
-
-
-    
-    {
-      image: "/assets/images/people/26spring/Yecheng_Final 2.JPG",
-      name: "Yecheng Wang",
-      title: "Undergraduate Student",
-      url: "https://www.linkedin.com/in/yecheng-wang",
-      links: [
-        {
-          title: "LinkedIn",
-          url: "https://www.linkedin.com/in/yecheng-wang",
-        },
-        {
-          title: "Email",
-          url: "mailto:yecheng.wang@sfu.ca",
-        },
-      ]
-    },
-
-    {
-      image: "/assets/images/people/26spring/Nardos 2.JPG",
+      image: "/assets/images/people/26summer/Nardos_Final.JPG",
       name: "Nardos Solomon",
       title: "Undergraduate Student",
       url: "",
     },
 
-
     {
-      image: "/assets/images/people/26spring/Dou_Final 2.JPG",
-      name: "Dou Gwon",
+      image: "/assets/images/people/26summer/Duc_Final.JPG",
+      name: "Duc Anh Nguyen",
       title: "Undergraduate Student",
       url: "",
     },
 
     {
-      image: "/assets/images/people/26spring/Flora_final 2.JPG",
-      name: "Flora Jin",
+      image: "/assets/images/people/26summer/Oliver2_Final.JPG",
+      name: "Oliver",
       title: "Undergraduate Student",
       url: "",
     },
 
+    {
+      image: "/assets/images/user.png",
+      name: "Maxim Sarukhanov",
+      title: "Undergraduate Student",
+      url: "",
+      links: [],
+    },
 
+    {
+      image: "/assets/images/user.png",
+      name: "Simone Motwani",
+      title: "Undergraduate Student",
+      url: "",
+      links: [],
+    },
 
+    {
+      image: "/assets/images/user.png",
+      name: "Chhaya Pradhan",
+      title: "Undergraduate Student",
+      url: "",
+      links: [],
+    },
 
+    {
+      image: "/assets/images/user.png",
+      name: "Justin Tan",
+      title: "Undergraduate Student",
+      url: "",
+      links: [],
+    },
+
+    /* boba */
+    {
+      image: "/assets/images/people/26summer/Boba_final.JPG",
+      name: "Boba",
+      title: "Pawstdoctoral Fellow",
+      url: "",
+    },
 
     
     /* collaborators */
@@ -311,7 +310,107 @@ export const people = [
       url: "https://www.katherineinterface.com/",
     },
 
+
+
+
+
+
     /* alumni */
+
+    {
+      image: "/assets/images/people/26summer/Yecheng_Final.JPG",
+      name: "Yecheng Wang",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "https://www.linkedin.com/in/yecheng-wang",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "https://www.linkedin.com/in/yecheng-wang",
+        },
+        {
+          title: "Email",
+          url: "mailto:yecheng.wang@sfu.ca",
+        },
+      ]
+    },
+
+    {
+      image: "/assets/images/people/26summer/Dou.JPG",
+      name: "Dou Gwon",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26summer/Dora1.JPG",
+      name: "Dora",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26summer/Nakul.JPG",
+      name: "Nakul",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26summer/Stella_Final.JPG",
+      name: "Stella",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+    },
+
+
+    {
+      image: "/assets/images/people/26spring/Yaaska1 2.JPG",
+      name: "Yaaska K. Pandit",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+      links: []
+    },
+
+    {
+      image: "/assets/images/people/26spring/Micah_final 2.JPG",
+      name: "Micah Baker",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "",
+    },
+
+    {
+      image: "/assets/images/people/26spring/Audrey 2.jpg",
+      name: "Audrey Safikhani",
+      title: "Undergraduate Student",
+      alumni: true,
+      alumniType: "undergrad",
+      url: "http://linkedin.com/in/audrey-safikhani",
+      links: [
+        {
+          title: "LinkedIn",
+          url: "http://linkedin.com/in/audrey-safikhani",
+        },
+        {
+          title: "Email",
+          url: "mailto:Safikhani.parasto@gmail.com",
+        },
+      ]
+    },
+
     {
       image: "/assets/images/people/_Duc_FINAL 2.JPG",
       name: "Duc Dang",
@@ -325,6 +424,15 @@ export const people = [
           url:"https://www.linkedin.com/in/dmdang/",
         },
       ]
+    },
+
+    {
+      image: "/assets/images/people/26spring/Flora_final 2.JPG",
+      name: "Flora Jin",
+      alumni: true,
+      title: "Undergraduate Student",
+      alumniType: "undergrad",
+      url: "",
     },
     
     {
@@ -449,11 +557,11 @@ export const people = [
       title: "BSc, 2024",
       alumni: true,
       alumniType: "undergrad",
-      url: "",
+      url: "https://www.linkedin.com/in/samira-pulatova/",
       links:[
         {
-          title:"Now Developer at X10 Technologies",
-          url: "https://x10technologies.com/",
+          title:"Now Program Manager at Pulse Lab",
+          url: "https://www.pulselabs.ai/",
         }
       ]
     },
@@ -479,9 +587,6 @@ export const people = [
       alumniType: "undergrad",
       url: "",
     },
-
-
-    /* alumni */
 
     {
       image: "/assets/images/user.png",

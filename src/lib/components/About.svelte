@@ -34,11 +34,16 @@
       </div>
     </div>
 
-    <div class="hidden md:flex">
+    <div class="relative hidden min-h-[16rem] overflow-hidden rounded-lg bg-gray-100 md:flex md:max-h-[26rem]">
       <LazyImage
-        src="/assets/images/people/26spring/Group 2.jpeg"
+        src="/assets/images/people/26summer/Group2.JPG"
+        alt=""
+        className="absolute inset-0 h-full w-full scale-110 object-cover !blur-md !opacity-90"
+      />
+      <LazyImage
+        src="/assets/images/people/26summer/Group2.JPG"
         alt="Group Photo"
-        className="rounded-lg max-h-[26rem] w-full h-full object-cover"
+        className="relative z-10 h-full w-full object-contain"
       />
     </div>
   </div>
