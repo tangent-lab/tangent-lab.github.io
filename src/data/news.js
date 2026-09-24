@@ -1,3 +1,18 @@
+/**
+ * @typedef {{
+ *   title: string,
+ *   date: string,
+ *   description?: string,
+ *   url?: string,
+ *   image: string,
+ *   tag: string,
+ *   article: string,
+ *   slug?: string,
+ * }} NewsItem
+ */
+
+/** @type {NewsItem[]} */
+
 export const news = [
   /*
   {
@@ -10,6 +25,60 @@ export const news = [
     article:"We are actively looking for exceptional students at the intersection of Human Computer Interaction, Electrical Engineering, Materials Science and Mechanical Engineering. If you are interested in working with us, please email me with your CV and transcript to Prof. Lawrence Kim.",
   },
   */
+
+  {
+    title: "Sarah Successfully Defends Her MSc Thesis",
+    date: "Aug, 2026",
+    description: "Congratulations to Sarah Jade Pratt on successfully defending her MSc thesis “User-Defined Interaction for Attributable Sound",
+    url: "",
+    image: "/assets/images/news/IMG_2235.jpg",
+    tag: "News",
+    article: `
+    <div class="flex flex-col gap-4">
+      <div class="flex place-content-center"><img src="/assets/images/news/IMG_2257.png" class="rounded-lg" alt="Sarah's thesis defense presentation"></div>
+      <div class="flex place-content-center"><img src="/assets/images/news/IMG_2243.jpg" class="rounded-lg" alt="Sarah presenting her MSc thesis work"></div>
+      <div class="flex place-content-center"><img src="/assets/images/news/IMG_2242.jpg" class="rounded-lg" alt="Sarah celebrating her MSc thesis defense"></div>
+    </div>
+    Congratulations to Sarah on successfully defending her MSc thesis! This milestone marks the culmination of her hard work, dedication, and creativity throughout her Master’s journey. We are incredibly proud of Sarah and grateful for the research contributions she has made to Tangent Lab. 
+
+    <strong>Thesis Title</strong>
+    User-Defined Interaction for Attributable Sound
+
+    <strong>Thesis Summary</strong>
+    Sound is a fundamental channel of information through which humans relate to and understand their environment. An emerging vision in audio HCI seeks to blend real and virtual sound sources, placing users at the helm of curating their desired soundscapes. As users are offered increasingly granular control over their sonic environment, they risk being overburdened with cumbersome interaction logic and socially opaque interaction legibility. Yet the design of these audio experiences has remained largely expert-led, leaving open how users themselves would approach the prospect of attributable sound in their environments. Robotically actuated parametric audio offers a uniquely suited instrument for this inquiry, rendering sound placement itself a directly manipulable dimension of interaction. This thesis investigates how users conceptualize and control the attribution of sound to locations, objects, and people in their environment through H(arm)onic, an interactive system combining a parametric speaker with a six-degree-of-freedom robotic arm. We begin with an interaction elicitation study that collects and analyzes user-generated interactions across spatial, social, and object-attribution referents, resulting in a consensus gesture set and three conceptual framings of attributable sound — as object, as communication, and as personification — which we operationalize in a functional prototype and validate through a usability evaluation. The system enables users to place audio at chosen locations, deliver private speech to individuals, and lend voices to everyday objects, all through natural pointing and speech. Together, these contributions establish spatial attribution as a substrate for auditory interaction design and lay the groundwork for future research in robot-mediated audio for shared environments.
+
+    <strong>Keywords</strong>
+    Gesture elicitation; audio interaction design; human-computer interaction; augmented audio reality; soundscape
+
+    <strong>Examining Committee</strong>
+    Dr. Lawrence Kim, Academic Supervisor
+    Dr. Angelica Lim, Committee Member
+    Dr. Xing-Dong Yang, Examiner
+    Dr. Parmit Chilana, Chair
+
+    Congratulations, Sarah, on this wonderful milestone! We are excited to see what comes next! 🎉
+    `,
+  },
+
+  {
+    title: "Tangent Lab Takes on the Grouse Grind",
+    date: "Jul, 2026",
+    description: "A summer adventure with Tangent Lab! ☀️🥾 Our lab took on Vancouver’s iconic Grouse Grind, hiking our way up Grouse Mountain and enjoying the stunning views along the way.",
+    url: "",
+    image: "/assets/images/news/IMG_2161.jpg",
+    tag: "News",
+    article: `
+    <div class="flex flex-col gap-4">
+      <div class="flex place-content-center"><img src="/assets/images/news/IMG_2151.jpg" class="rounded-lg" alt="Tangent Lab at the Grouse Grind trailhead"></div>
+      <div class="flex place-content-center"><img src="/assets/images/news/IMG_2156.jpg" class="rounded-lg" alt="Tangent Lab hiking up Grouse Mountain"></div>
+    </div>
+    A summer adventure with Tangent Lab! ☀️🥾 Our lab took on Vancouver’s iconic Grouse Grind, hiking our way up Grouse Mountain and enjoying the stunning views along the way.
+
+    After conquering the trail, we celebrated with a well-deserved meal at the summit, followed by some fun activities and time to relax together. A perfect day of fresh mountain air, teamwork, and great company!
+
+    Nothing beats making memories together outside the lab! 🌲✨
+    `,
+  },
 
   {
     title: "Alex Presented Research at DIS 2026",
@@ -499,6 +568,7 @@ export const news = [
 
 // generate slugs for each news item (format: YYYY-MM-N). If an item already has `slug`, keep it.
 (() => {
+  /** @type {Record<string, number>} */
   const counts = {};
   news.forEach(item => {
     if (item.slug) return;
