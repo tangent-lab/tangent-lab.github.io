@@ -72,27 +72,6 @@ export const people = [
 
     /* master */
     {
-      image: "/assets/images/people/26summer/Sarah2.JPG",
-      name: "Sarah Pratt",
-      title: "Thesis MSc Student",
-      url: "https://sarahjade.ca",
-      links:[
-        {
-          title: "Website",
-          url: "https://sarahjade.ca",
-        },
-        {
-          title:"LinkedIn",
-          url:"https://www.linkedin.com/in/sarah-jade-pratt/",
-        },
-        {
-          title:"Email",
-          url:"mailto:sarah_pratt_2@sfu.ca",
-        },
-      ]
-    },
-
-    {
       image: "/assets/images/people/26spring/Qihan 2.JPG",
       name: "Qihan Gao",
       title: "Thesis MSc Student",
@@ -191,7 +170,7 @@ export const people = [
 
     {
       image: "/assets/images/people/26summer/Oliver2_Final.JPG",
-      name: "Oliver",
+      name: "Oliver Ng-Young-Lim",
       title: "Undergraduate Student",
       url: "",
     },
@@ -316,7 +295,28 @@ export const people = [
 
 
     /* alumni */
-
+    {
+      image: "/assets/images/people/26summer/Sarah2.JPG",
+      name: "Sarah Pratt",
+      title: "Thesis MSc Student",
+      alumni: true,
+      alumniType: "grad",
+      url: "https://sarahjade.ca",
+      links:[
+        {
+          title: "Website",
+          url: "https://sarahjade.ca",
+        },
+        {
+          title:"LinkedIn",
+          url:"https://www.linkedin.com/in/sarah-jade-pratt/",
+        },
+        {
+          title:"Email",
+          url:"mailto:sarah_pratt_2@sfu.ca",
+        },
+      ]
+    },
     {
       image: "/assets/images/people/26summer/Yecheng_Final.JPG",
       name: "Yecheng Wang",
@@ -347,7 +347,7 @@ export const people = [
 
     {
       image: "/assets/images/people/26summer/Dora1.JPG",
-      name: "Dora",
+      name: "Dora Ciobanu",
       title: "Undergraduate Student",
       alumni: true,
       alumniType: "undergrad",
@@ -356,7 +356,7 @@ export const people = [
 
     {
       image: "/assets/images/people/26summer/Nakul.JPG",
-      name: "Nakul",
+      name: "Nakul Bansal",
       title: "Undergraduate Student",
       alumni: true,
       alumniType: "undergrad",
@@ -365,7 +365,7 @@ export const people = [
 
     {
       image: "/assets/images/people/26summer/Stella_Final.JPG",
-      name: "Stella",
+      name: "Stella Lin",
       title: "Undergraduate Student",
       alumni: true,
       alumniType: "undergrad",
